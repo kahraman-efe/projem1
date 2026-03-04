@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html class="no-js" lang="tr">
+
+@await Component.InvokeAsync("HeadComponent")
+
+
+<body id="top">
+
+    
+    @await Component.InvokeAsync("NavbarComponent");
+    
+    
+    @await Component.InvokeAsync("FeatureComponent")
+
+    @await Component.InvokeAsync("AboutComponent")
+     
+    @await Component.InvokeAsync("PortfolioComponent")
+   
+    @await Component.InvokeAsync("TestimonialComponent")
+     
+    @await Component.InvokeAsync("StatisticComponent")
+   
+    @await Component.InvokeAsync("ContactComponent")
+   
+   @await Component.InvokeAsync("FooterComponent")
+    
+
+</body>
+
+</html>

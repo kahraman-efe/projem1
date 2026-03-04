@@ -1,0 +1,48 @@
+﻿<section id="about" class="s-about target-section">
+
+    <div class="row narrow section-intro has-bottom-sep">
+        <div class="col-full text-center">
+            <h3>Hakkımda</h3>
+            <h1>Ben kimim?</h1>
+            <p> Ben Balıkesir Universitesinde Bilgisayar mühendisliği okuyan 2.sınıf bir öğrenciyim.   </p>
+        </div>
+    </div>
+
+    <div class="row about-content">
+
+        <div class="col-six tab-full left">
+            <h3>Kendi hakkımda bilgiler</h3>
+
+            <p>Merhaba ben Efe! 19 yaşındayım ve Bilgisayar Mühendisliğinde 2.sınıfım. Yazılım geliştiriciliğine ve c# Unity ile mobil uygulama yapmaya ilgiliyim. 
+               Kariyer hedefi olarak güzel bir şirkette görevimi sadıklıkla yapmak.
+               Açık kaynak projelere katkıda bulunmak ve kendim proje yapmaktan zevk alırım.
+               Hobi olarak yazılım dışında bilgisayar oyunları oynamak, düzenli fitness yapmak,
+               düzenli yürüyüş yapmak,arada bira içmek,futbol oynamak,futbol maçları izlemek,dizi izlemektir.
+            
+            </p>
+
+           
+        </div>
+
+        @await Component.InvokeAsync("SkillComponent")
+    </div> <!-- end about-content -->
+
+    <div class="row about-content about-content--buttons">
+
+        <div class="col-six tab-full left">
+            <a href="#0" class="btn btn--primary full-width">CV'mi indir</a>
+        </div>
+        <div class="col-six tab-full right">
+            <form action="https://formspree.io/f/mbdagoyn" method="POST">
+                <input type="email" name="email" placeholder="E-mail" required>
+                <textarea name="message" placeholder="Mesaj" required></textarea>
+                <button type="submit" class="btn full-width">Bana Yazın</button>
+            </form>
+        </div>
+
+    </div> <!-- end about-content buttons -->
+    @await Component.InvokeAsync("ExperienceComponent")
+
+     <!-- end about-content timeline -->
+
+</section>
