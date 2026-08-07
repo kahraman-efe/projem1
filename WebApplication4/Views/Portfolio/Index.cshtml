@@ -1,0 +1,27 @@
+﻿@model List<WebApplication4.DAL.Entities.Portfolio>
+@{
+    Layout = "_AdminLayout";
+}
+<div class="top-bar">
+    <h1>Projeler</h1>
+    <a href="/Portfolio/Create" class="btn">+ Yeni Proje Ekle</a>
+</div>
+<table>
+    <tr>
+        <th>Görsel</th>
+        <th>Başlık</th>
+        <th>Alt Başlık</th>
+        <th>Link</th>
+        <th>İşlem</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td><img class="thumb" src="@item.ImageURL" /></td>
+            <td>@item.Title</td>
+            <td>@item.Subtitle</td>
+            <td><a href="@item.URL" target="_blank">@item.URL</a></td>
+            <td><a class="delete-link" href="/Portfolio/Delete/@item.PortfolioId" onclick="return confirm('Silmek istediğine emin misin?')">Sil</a></td>
+        </tr>
+    }
+</table>

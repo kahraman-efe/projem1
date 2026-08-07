@@ -1,0 +1,16 @@
+﻿@model WebApplication4.DAL.Entities.Statistic
+@{
+    Layout = "_AdminLayout";
+}
+<h1>Yeni İstatistik Ekle</h1>
+<div class="form-box">
+    <form method="post" action="/Statistic/Create">
+        <label>Başlık</label>
+        <input type="text" name="Title" placeholder="Örn: Alınan Ödüller" required />
+
+        <label>Sayı</label>
+        <input type="number" name="Count" placeholder="Örn: 5" required />
+
+        <button type="submit">Kaydet</button>
+    </form>
+</div>

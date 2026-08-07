@@ -1,0 +1,25 @@
+﻿@model List<WebApplication4.DAL.Entities.SocialMedia>
+@{
+    Layout = "_AdminLayout";
+}
+<div class="top-bar">
+    <h1>Sosyal Medya</h1>
+    <a href="/SocialMedia/Create" class="btn">+ Yeni Ekle</a>
+</div>
+<table>
+    <tr>
+        <th>Platform</th>
+        <th>Link</th>
+        <th>İkon</th>
+        <th>İşlem</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td><a href="@item.Url" target="_blank">@item.Url</a></td>
+            <td>@item.Icon</td>
+            <td><a class="delete-link" href="/SocialMedia/Delete/@item.SocialMediaId" onclick="return confirm('Silmek istediğine emin misin?')">Sil</a></td>
+        </tr>
+    }
+</table>

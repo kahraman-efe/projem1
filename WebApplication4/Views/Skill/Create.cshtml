@@ -1,0 +1,14 @@
+﻿@model WebApplication4.DAL.Entities.Skill
+@{
+    Layout = "_AdminLayout";
+}
+<h1>Yeni Yetenek Ekle</h1>
+<div class="form-box">
+    <form method="post" action="/Skill/Create">
+        <label>Yetenek Adı</label>
+        <input type="text" name="Title" placeholder="Örn: C#" required />
+        <label>Seviye (%)</label>
+        <input type="text" name="Value" placeholder="Örn: 80" required />
+        <button type="submit">Kaydet</button>
+    </form>
+</div>

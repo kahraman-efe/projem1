@@ -255,3 +255,4 @@ C:\Users\HP\source\repos\WebApplication4\WebApplication4\bin\Debug\net8.0\ru\Mic
 C:\Users\HP\source\repos\WebApplication4\WebApplication4\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\HP\source\repos\WebApplication4\WebApplication4\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\HP\source\repos\WebApplication4\WebApplication4\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\HP\source\repos\WebApplication4\WebApplication4\obj\Debug\net8.0\WebApplication4.sourcelink.json

@@ -1,0 +1,27 @@
+﻿@model List<WebApplication4.DAL.Entities.Testimonial>
+@{
+    Layout = "_AdminLayout";
+}
+<div class="top-bar">
+    <h1>Referanslar</h1>
+    <a href="/Testimonial/Create" class="btn">+ Yeni Referans Ekle</a>
+</div>
+<table>
+    <tr>
+        <th>Görsel</th>
+        <th>Ad Soyad</th>
+        <th>Ünvan</th>
+        <th>Yorum</th>
+        <th>İşlem</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td><img class="thumb" src="@item.ImageUrl" /></td>
+            <td>@item.NameSurname</td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td><a class="delete-link" href="/Testimonial/Delete/@item.TestimonialId" onclick="return confirm('Silmek istediğine emin misin?')">Sil</a></td>
+        </tr>
+    }
+</table>

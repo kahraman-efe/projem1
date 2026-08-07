@@ -1,5 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\files\cv Kahraman_Efe_Erden.pdf
 wwwroot\hola-master\blog.html
 wwwroot\hola-master\blog-single.html
 wwwroot\hola-master\css\base.css
@@ -47,6 +48,7 @@ wwwroot\hola-master\images\blog\blog-bg-02.jpg
 wwwroot\hola-master\images\contact-bg.jpg
 wwwroot\hola-master\images\count-bg.jpg
 wwwroot\hola-master\images\hero-bg.jpg
+wwwroot\hola-master\images\IMG_1418.HEIC
 wwwroot\hola-master\images\logo.png
 wwwroot\hola-master\images\photoswipe\default-skin.png
 wwwroot\hola-master\images\photoswipe\default-skin.svg

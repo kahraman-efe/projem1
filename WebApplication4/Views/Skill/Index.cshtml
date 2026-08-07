@@ -1,0 +1,23 @@
+﻿@model List<WebApplication4.DAL.Entities.Skill>
+@{
+    Layout = "_AdminLayout";
+}
+<div class="top-bar">
+    <h1>Yetenekler</h1>
+    <a href="/Skill/Create" class="btn">+ Yeni Yetenek Ekle</a>
+</div>
+<table>
+    <tr>
+        <th>Başlık</th>
+        <th>Değer</th>
+        <th>İşlem</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Value</td>
+            <td><a class="delete-link" href="/Skill/Delete/@item.SkillId" onclick="return confirm('Silmek istediğine emin misin?')">Sil</a></td>
+        </tr>
+    }
+</table>

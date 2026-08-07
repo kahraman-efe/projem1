@@ -1,14 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebApplication4.DAL.Context;
 
 namespace WebApplication4.ViewComponents
 {
-    public class SkillComponent:ViewComponent
+    public class SkillComponent : ViewComponent
     {
-        public IViewComponentResult Invoke()
+        private readonly MyPortfolioContext _context;
+
+        public SkillComponent(MyPortfolioContext context)
         {
-            return View();
+            _context = context;
         }
 
-
+        public IViewComponentResult Invoke()
+        {
+            var skills = _context.Skills.ToList();
+            return View(skills);
+        }
     }
 }

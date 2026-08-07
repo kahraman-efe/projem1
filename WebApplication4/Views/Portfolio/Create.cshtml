@@ -1,0 +1,20 @@
+﻿@model WebApplication4.DAL.Entities.Portfolio
+@{
+    Layout = "_AdminLayout";
+}
+<h1>Yeni Proje Ekle</h1>
+<div class="form-box">
+    <form method="post" action="/Portfolio/Create">
+        <label>Başlık</label>
+        <input type="text" name="Title" required />
+        <label>Alt Başlık</label>
+        <input type="text" name="Subtitle" />
+        <label>Görsel URL</label>
+        <input type="text" name="ImageURL" />
+        <label>Proje Linki</label>
+        <input type="text" name="URL" />
+        <label>Açıklama</label>
+        <textarea name="Description" rows="4"></textarea>
+        <button type="submit">Kaydet</button>
+    </form>
+</div>

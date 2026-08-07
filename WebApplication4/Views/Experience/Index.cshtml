@@ -1,0 +1,27 @@
+﻿@model List<WebApplication4.DAL.Entities.Experience>
+@{
+    Layout = "_AdminLayout";
+}
+<div class="top-bar">
+    <h1>Deneyimler</h1>
+    <a href="/Experience/Create" class="btn">+ Yeni Deneyim Ekle</a>
+</div>
+<table>
+    <tr>
+        <th>Başlık (Head)</th>
+        <th>Ünvan</th>
+        <th>Tarih</th>
+        <th>Açıklama</th>
+        <th>İşlem</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Head</td>
+            <td>@item.Title</td>
+            <td>@item.Date</td>
+            <td>@item.Description</td>
+            <td><a class="delete-link" href="/Experience/Delete/@item.ExperienceID" onclick="return confirm('Silmek istediğine emin misin?')">Sil</a></td>
+        </tr>
+    }
+</table>

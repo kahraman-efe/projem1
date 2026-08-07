@@ -1,0 +1,16 @@
+﻿@model WebApplication4.DAL.Entities.Feature
+@{
+    Layout = "_AdminLayout";
+}
+<h1>Yeni Başlık Ekle</h1>
+<div class="form-box">
+    <form method="post" action="/Feature/Create">
+        <label>Başlık</label>
+        <input type="text" name="Title" placeholder="Örn: Merhaba" required />
+
+        <label>Açıklama</label>
+        <textarea name="Description" rows="4" placeholder="Örn: Ben Efe, yazılım geliştiriciyim..."></textarea>
+
+        <button type="submit">Kaydet</button>
+    </form>
+</div>

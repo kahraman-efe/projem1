@@ -1,0 +1,23 @@
+﻿@model List<WebApplication4.DAL.Entities.Statistic>
+@{
+    Layout = "_AdminLayout";
+}
+<div class="top-bar">
+    <h1>İstatistikler</h1>
+    <a href="/Statistic/Create" class="btn">+ Yeni İstatistik Ekle</a>
+</div>
+<table>
+    <tr>
+        <th>Başlık</th>
+        <th>Sayı</th>
+        <th>İşlem</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Count</td>
+            <td><a class="delete-link" href="/Statistic/Delete/@item.StatisticId" onclick="return confirm('Silmek istediğine emin misin?')">Sil</a></td>
+        </tr>
+    }
+</table>

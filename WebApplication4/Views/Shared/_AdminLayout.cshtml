@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Admin Panel</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f5f7;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 240px;
+            background: #1e1e2d;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 0;
+        }
+
+            .sidebar h2 {
+                padding: 0 1.5rem 1.5rem;
+                font-size: 18px;
+                border-bottom: 1px solid #333;
+                margin-bottom: 1rem;
+            }
+
+            .sidebar a {
+                color: #ccc;
+                text-decoration: none;
+                padding: 12px 1.5rem;
+                font-size: 14px;
+                display: block;
+            }
+
+                .sidebar a:hover {
+                    background: #2a2a3d;
+                    color: #fff;
+                }
+
+                .sidebar a.active {
+                    background: #2a2a3d;
+                    color: #fff;
+                    border-left: 3px solid #d43b2f;
+                }
+
+            .sidebar .logout {
+                margin-top: auto;
+                border-top: 1px solid #333;
+                color: #e05c4c;
+            }
+
+        .main {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .btn {
+            background: #1e1e2d;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+
+        th {
+            background: #1e1e2d;
+            color: #fff;
+        }
+
+        tr:hover {
+            background: #f9f9f9;
+        }
+
+        .delete-link {
+            color: #d43b2f;
+            text-decoration: none;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-box {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 480px;
+        }
+
+        label {
+            display: block;
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 6px;
+            margin-top: 14px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            background: #1e1e2d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        img.thumb {
+            width: 60px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <a href="/Feature/Index">Ana Sayfa Başlığı</a>
+        <a href="/Admin/Index">Dashboard</a>
+        <a href="/Message/Index">Mesajlar</a>
+        <a href="/Portfolio/Index">Projeler</a>
+        <a href="/Skill/Index">Yetenekler</a>
+        <a href="/Experience/Index">Deneyimler</a>
+        <a href="/About/Index">Hakkımda</a>
+        <a href="/Testimonial/Index">Referanslar</a>
+        <a href="/Statistic/Index">İstatistikler</a>
+        <a href="/SocialMedia/Index">Sosyal Medya</a>
+        <a href="/Contact/Index">İletişim Bilgileri</a>
+        <a href="/Default/Index" target="_blank">Siteyi Gör</a>
+        <a href="/AdminLogin/Logout" class="logout">Çıkış Yap</a>
+        
+
+    </div>
+
+    <div class="main">
+        @RenderBody()
+    </div>
+</body>
+</html>

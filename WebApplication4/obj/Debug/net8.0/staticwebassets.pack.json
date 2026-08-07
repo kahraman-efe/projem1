@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\files\\cv Kahraman_Efe_Erden.pdf",
+      "PackagePath": "staticwebassets\\files\\cv Kahraman_Efe_Erden.pdf"
+    },
+    {
       "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\blog-single.html",
       "PackagePath": "staticwebassets\\hola-master\\blog-single.html"
     },
@@ -159,6 +163,10 @@
     {
       "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\fonts\\montserrat\\montserrat-thin-webfont.woff2",
       "PackagePath": "staticwebassets\\hola-master\\fonts\\montserrat\\montserrat-thin-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\IMG_1418.HEIC",
+      "PackagePath": "staticwebassets\\hola-master\\images\\IMG_1418.HEIC"
     },
     {
       "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\avatars\\user-01.jpg",

@@ -47,6 +47,27 @@ namespace WebApplication4.Migrations
                     b.ToTable("Abouts");
                 });
 
+            modelBuilder.Entity("WebApplication4.DAL.Entities.Admin", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Admins");
+                });
+
             modelBuilder.Entity("WebApplication4.DAL.Entities.Contact", b =>
                 {
                     b.Property<int>("ContactId")
@@ -250,6 +271,26 @@ namespace WebApplication4.Migrations
                     b.HasKey("SocialMediaId");
 
                     b.ToTable("SocialMedias");
+                });
+
+            modelBuilder.Entity("WebApplication4.DAL.Entities.Statistic", b =>
+                {
+                    b.Property<int>("StatisticId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StatisticId"));
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("StatisticId");
+
+                    b.ToTable("Statistics");
                 });
 
             modelBuilder.Entity("WebApplication4.DAL.Entities.Testimonial", b =>

@@ -249,6 +249,88 @@
       ]
     },
     {
+      "Route": "files/cv Kahraman_Efe_Erden.ftdfib5xga.pdf",
+      "AssetFile": "files/cv Kahraman_Efe_Erden.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75893"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s+HG9/7e5QguRkh+39CfuesasZpzMN4w3tUX2YLpR2M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jul 2026 19:16:39 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ftdfib5xga"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s+HG9/7e5QguRkh+39CfuesasZpzMN4w3tUX2YLpR2M="
+        },
+        {
+          "Name": "label",
+          "Value": "files/cv Kahraman_Efe_Erden.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "files/cv Kahraman_Efe_Erden.pdf",
+      "AssetFile": "files/cv Kahraman_Efe_Erden.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75893"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s+HG9/7e5QguRkh+39CfuesasZpzMN4w3tUX2YLpR2M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jul 2026 19:16:39 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-s+HG9/7e5QguRkh+39CfuesasZpzMN4w3tUX2YLpR2M="
+        }
+      ]
+    },
+    {
       "Route": "hola-master/blog-single.0kg15hp4tp.html",
       "AssetFile": "hola-master/blog-single.html",
       "Selectors": [],
@@ -3279,6 +3361,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-KAf0vDFM3WA+LxvGPSwYjUVkx+S2YoKqF0XW0USr/XQ="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/images/IMG_1418.HEIC",
+      "AssetFile": "hola-master/images/IMG_1418.HEIC",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1929753"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LRswBVzZQXhwKmbqwjCTb/V/W5BRmfLsNEOynUtZBzc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Nov 2025 15:22:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LRswBVzZQXhwKmbqwjCTb/V/W5BRmfLsNEOynUtZBzc="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/images/IMG_1418.t8vk4valnq.HEIC",
+      "AssetFile": "hola-master/images/IMG_1418.HEIC",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1929753"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LRswBVzZQXhwKmbqwjCTb/V/W5BRmfLsNEOynUtZBzc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Nov 2025 15:22:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t8vk4valnq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LRswBVzZQXhwKmbqwjCTb/V/W5BRmfLsNEOynUtZBzc="
+        },
+        {
+          "Name": "label",
+          "Value": "hola-master/images/IMG_1418.HEIC"
         }
       ]
     },

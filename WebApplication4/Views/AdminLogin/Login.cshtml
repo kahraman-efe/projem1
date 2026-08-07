@@ -1,0 +1,126 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <title>Admin Giriş</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #eceff1;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .login-card {
+            background: #fff;
+            border-radius: 12px;
+            width: 380px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .login-card__banner {
+            height: 140px;
+            background: linear-gradient(135deg, #2c3e50, #4a6572);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .login-card__banner h1 {
+                color: #fff;
+                font-size: 22px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+
+        .login-card__body {
+            padding: 2rem 2.25rem 2.25rem;
+        }
+
+        .field {
+            margin-bottom: 1.25rem;
+        }
+
+            .field label {
+                display: block;
+                font-size: 13px;
+                color: #888;
+                margin-bottom: 6px;
+            }
+
+            .field input {
+                width: 100%;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 10px 12px;
+                font-size: 14px;
+                outline: none;
+            }
+
+                .field input:focus {
+                    border-color: #d43b2f;
+                }
+
+        .btn-login {
+            width: 100%;
+            background: #d43b2f;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 0.25rem;
+        }
+
+            .btn-login:hover {
+                background: #b8322a;
+            }
+
+        .error {
+            color: #d43b2f;
+            font-size: 13px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <div class="login-card__banner">
+            <h1>Admin Girişi</h1>
+        </div>
+        <div class="login-card__body">
+            @if (ViewBag.Error != null)
+            {
+                <p class="error">@ViewBag.Error</p>
+            }
+
+            <form method="post" asp-action="Login" asp-controller="AdminLogin">
+                <div class="field">
+                    <label>Kullanıcı Adı</label>
+                    <input type="text" name="username" placeholder="Kullanıcı adınız" required />
+                </div>
+                <div class="field">
+                    <label>Şifre</label>
+                    <input type="password" name="password" placeholder="Şifreniz" required />
+                </div>
+                <button type="submit" class="btn-login">Giriş Yap</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

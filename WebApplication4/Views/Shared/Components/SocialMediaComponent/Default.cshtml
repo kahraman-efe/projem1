@@ -1,0 +1,10 @@
+﻿@model List<WebApplication4.DAL.Entities.SocialMedia>
+
+<ul class="home-social">
+    @foreach (var item in Model)
+    {
+        <li>
+            <a href="@item.Url" target="_blank"><i class="im im-@item.Icon" aria-hidden="true"></i><span>@item.Title</span></a>
+        </li>
+    }
+</ul>

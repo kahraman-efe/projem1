@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication4.Controllers
 {
+    
     public class DefaultController : Controller
     {
         public IActionResult Index()

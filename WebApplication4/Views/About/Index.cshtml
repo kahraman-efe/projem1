@@ -1,0 +1,19 @@
+﻿@model WebApplication4.DAL.Entities.About
+@{
+    Layout = "_AdminLayout";
+}
+<h1>Hakkımda Bilgilerini Düzenle</h1>
+<div class="form-box">
+    <form method="post" action="/About/Index">
+        <label>Başlık</label>
+        <input type="text" name="Title" value="@Model.Title" required />
+
+        <label>Kısa Açıklama</label>
+        <input type="text" name="SubDescription" value="@Model.SubDescription" />
+
+        <label>Detaylı Açıklama</label>
+        <textarea name="Details" rows="6">@Model.Details</textarea>
+
+        <button type="submit">Kaydet</button>
+    </form>
+</div>

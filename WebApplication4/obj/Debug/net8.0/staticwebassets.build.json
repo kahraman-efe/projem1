@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0kj/n3jmj47HsGvudGNJ+aOxg8eSBVn0Ar2FOkyuKYs=",
+  "Hash": "N6KpSAvzi/sGj/bjSlaX6SD+PGf4tYce88lXOOTIAKI=",
   "Source": "WebApplication4",
   "BasePath": "_content/WebApplication4",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\files\\cv Kahraman_Efe_Erden.pdf",
+      "SourceId": "WebApplication4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\",
+      "BasePath": "_content/WebApplication4",
+      "RelativePath": "files/cv Kahraman_Efe_Erden#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ftdfib5xga",
+      "Integrity": "s+HG9/7e5QguRkh+39CfuesasZpzMN4w3tUX2YLpR2M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\cv Kahraman_Efe_Erden.pdf"
     },
     {
       "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\blog.html",
@@ -1086,6 +1107,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\hola-master\\images\\hero-bg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\IMG_1418.HEIC",
+      "SourceId": "WebApplication4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\",
+      "BasePath": "_content/WebApplication4",
+      "RelativePath": "hola-master/images/IMG_1418#[.{fingerprint}]?.HEIC",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t8vk4valnq",
+      "Integrity": "LRswBVzZQXhwKmbqwjCTb/V/W5BRmfLsNEOynUtZBzc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\hola-master\\images\\IMG_1418.HEIC"
     },
     {
       "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\logo.png",
@@ -3371,6 +3413,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "files/cv Kahraman_Efe_Erden.ftdfib5xga.pdf",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\files\\cv Kahraman_Efe_Erden.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75893"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s+HG9/7e5QguRkh+39CfuesasZpzMN4w3tUX2YLpR2M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jul 2026 19:16:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ftdfib5xga"
+        },
+        {
+          "Name": "label",
+          "Value": "files/cv Kahraman_Efe_Erden.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s+HG9/7e5QguRkh+39CfuesasZpzMN4w3tUX2YLpR2M="
+        }
+      ]
+    },
+    {
+      "Route": "files/cv Kahraman_Efe_Erden.pdf",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\files\\cv Kahraman_Efe_Erden.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75893"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s+HG9/7e5QguRkh+39CfuesasZpzMN4w3tUX2YLpR2M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jul 2026 19:16:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-s+HG9/7e5QguRkh+39CfuesasZpzMN4w3tUX2YLpR2M="
         }
       ]
     },
@@ -7225,6 +7349,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-l2VtJecVTJ2o9DHbM9cD8tSZPPP6a+LgnkCCsHiVXlc="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/images/IMG_1418.HEIC",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\IMG_1418.HEIC",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1929753"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LRswBVzZQXhwKmbqwjCTb/V/W5BRmfLsNEOynUtZBzc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Nov 2025 15:22:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LRswBVzZQXhwKmbqwjCTb/V/W5BRmfLsNEOynUtZBzc="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/images/IMG_1418.t8vk4valnq.HEIC",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\IMG_1418.HEIC",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1929753"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LRswBVzZQXhwKmbqwjCTb/V/W5BRmfLsNEOynUtZBzc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Nov 2025 15:22:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t8vk4valnq"
+        },
+        {
+          "Name": "label",
+          "Value": "hola-master/images/IMG_1418.HEIC"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LRswBVzZQXhwKmbqwjCTb/V/W5BRmfLsNEOynUtZBzc="
         }
       ]
     },

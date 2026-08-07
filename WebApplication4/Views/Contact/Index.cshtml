@@ -1,0 +1,25 @@
+﻿@model WebApplication4.DAL.Entities.Contact
+@{
+    Layout = "_AdminLayout";
+}
+<h1>İletişim Bilgilerini Düzenle</h1>
+<div class="form-box">
+    <form method="post" action="/Contact/Index">
+        <label>Başlık</label>
+        <input type="text" name="Title" value="@Model.Title" />
+
+        <label>Açıklama</label>
+        <input type="text" name="Description" value="@Model.Description" />
+
+        <label>Telefon</label>
+        <input type="text" name="Phone1" value="@Model.Phone1" />
+
+        <label>Email</label>
+        <input type="text" name="Email1" value="@Model.Email1" />
+
+        <label>Adres</label>
+        <textarea name="Address" rows="3">@Model.Address</textarea>
+
+        <button type="submit">Kaydet</button>
+    </form>
+</div>

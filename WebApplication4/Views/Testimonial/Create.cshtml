@@ -1,0 +1,22 @@
+﻿@model WebApplication4.DAL.Entities.Testimonial
+@{
+    Layout = "_AdminLayout";
+}
+<h1>Yeni Referans Ekle</h1>
+<div class="form-box">
+    <form method="post" action="/Testimonial/Create">
+        <label>Ad Soyad</label>
+        <input type="text" name="NameSurname" required />
+
+        <label>Ünvan</label>
+        <input type="text" name="Title" placeholder="Örn: CEO, Apple" />
+
+        <label>Görsel URL</label>
+        <input type="text" name="ImageUrl" />
+
+        <label>Yorum</label>
+        <textarea name="Description" rows="4"></textarea>
+
+        <button type="submit">Kaydet</button>
+    </form>
+</div>

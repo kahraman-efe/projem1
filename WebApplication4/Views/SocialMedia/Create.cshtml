@@ -1,0 +1,19 @@
+﻿@model WebApplication4.DAL.Entities.SocialMedia
+@{
+    Layout = "_AdminLayout";
+}
+<h1>Yeni Sosyal Medya Ekle</h1>
+<div class="form-box">
+    <form method="post" action="/SocialMedia/Create">
+        <label>Platform Adı</label>
+        <input type="text" name="Title" placeholder="Örn: Facebook" required />
+
+        <label>Link (URL)</label>
+        <input type="text" name="Url" placeholder="https://facebook.com/..." required />
+
+        <label>İkon Adı</label>
+        <input type="text" name="Icon" placeholder="Örn: facebook, twitter, instagram, youtube" required />
+
+        <button type="submit">Kaydet</button>
+    </form>
+</div>

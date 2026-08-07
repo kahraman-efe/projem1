@@ -1,0 +1,24 @@
+﻿@model List<WebApplication4.DAL.Entities.Message>
+@{
+    Layout = "_AdminLayout";
+}
+<h1>Gelen Mesajlar</h1>
+<table>
+    <tr>
+        <th>Ad Soyad</th>
+        <th>Email</th>
+        <th>Konu</th>
+        <th>Mesaj</th>
+        <th>Tarih</th>
+    </tr>
+    @foreach (var msg in Model)
+    {
+        <tr>
+            <td>@msg.NameSurname</td>
+            <td>@msg.Email</td>
+            <td>@msg.Subject</td>
+            <td>@msg.MessageDetail</td>
+            <td>@msg.SendDate.ToString("dd.MM.yyyy HH:mm")</td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,22 @@
+﻿@model WebApplication4.DAL.Entities.Experience
+@{
+    Layout = "_AdminLayout";
+}
+<h1>Yeni Deneyim Ekle</h1>
+<div class="form-box">
+    <form method="post" action="/Experience/Create">
+        <label>Başlık (Head)</label>
+        <input type="text" name="Head" placeholder="Örn: Şirket Adı" required />
+
+        <label>Ünvan</label>
+        <input type="text" name="Title" placeholder="Örn: Yazılım Stajyeri" required />
+
+        <label>Tarih</label>
+        <input type="text" name="Date" placeholder="Örn: 2024 - 2025" required />
+
+        <label>Açıklama</label>
+        <textarea name="Description" rows="4"></textarea>
+
+        <button type="submit">Kaydet</button>
+    </form>
+</div>
