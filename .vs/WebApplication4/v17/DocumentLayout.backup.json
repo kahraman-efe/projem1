@@ -5,6 +5,42 @@
     {
       "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\socialmedia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\socialmedia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\socialmedia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\socialmedia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\controllers\\socialmediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\controllers\\socialmediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\viewcomponents\\portfoliocomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\viewcomponents\\portfoliocomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\portfolio\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\portfolio\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\shared\\components\\portfoliocomponent\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\shared\\components\\portfoliocomponent\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,9 +60,127 @@
               "RelativeDocumentMoniker": "WebApplication4\\Views\\Default\\Index.cshtml",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Default\\Index.cshtml",
               "RelativeToolTip": "WebApplication4\\Views\\Default\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-02-09T01:59:05.091Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\SocialMedia\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\SocialMedia\\Create.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\SocialMedia\\Create.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\SocialMedia\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-13T14:30:00.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\SocialMedia\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\SocialMedia\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\SocialMedia\\Index.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\SocialMedia\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-13T14:29:53.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SocialMediaController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\SocialMediaController.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Controllers\\SocialMediaController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\SocialMediaController.cs",
+              "RelativeToolTip": "WebApplication4\\Controllers\\SocialMediaController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T14:29:22.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAowK8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-13T14:10:36.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\Components\\PortfolioComponent\\Default.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\Shared\\Components\\PortfolioComponent\\Default.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\Components\\PortfolioComponent\\Default.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\Shared\\Components\\PortfolioComponent\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-13T14:03:44.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Portfolio\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\Portfolio\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Portfolio\\Index.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\Portfolio\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-13T14:01:54.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Portfolio\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\Portfolio\\Create.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Portfolio\\Create.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\Portfolio\\Create.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-13T14:01:47.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PortfolioComponent.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\ViewComponents\\PortfolioComponent.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\ViewComponents\\PortfolioComponent.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\ViewComponents\\PortfolioComponent.cs",
+              "RelativeToolTip": "WebApplication4\\ViewComponents\\PortfolioComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T14:01:35.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PortfolioController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\PortfolioController.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Controllers\\PortfolioController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\PortfolioController.cs",
+              "RelativeToolTip": "WebApplication4\\Controllers\\PortfolioController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAhwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T14:01:16.17Z",
               "EditorCaption": ""
             }
           ]
