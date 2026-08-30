@@ -1,12 +1,21 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication4.DAL.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllersWithViews();
+// AutoValidateAntiforgeryTokenAttribute: siteye ait TÜM POST/PUT/DELETE isteklerinde
+// otomatik olarak anti-forgery (CSRF) token doğrulaması yapar. Tek tek her controller'a
+// [ValidateAntiForgeryToken] eklemeyi unutma riskini ortadan kaldırır.
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+});
 
-builder.Services.AddDbContext<MyPortfolioContext>();
+var connectionString = builder.Configuration.GetConnectionString("MyPortfolioDb");
+builder.Services.AddDbContext<MyPortfolioContext>(options =>
+    options.UseSqlServer(connectionString));
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>

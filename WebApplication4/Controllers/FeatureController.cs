@@ -30,11 +30,17 @@ namespace WebApplication4.Controllers
         [HttpPost]
         public IActionResult Create(Feature model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             _context.Features.Add(model);
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
 
+        [HttpPost]
         public IActionResult Delete(int id)
         {
             var feature = _context.Features.FirstOrDefault(f => f.FeatureId == id);

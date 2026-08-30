@@ -5,12 +5,17 @@ namespace WebApplication4.ViewComponents
 {
     public class FeatureComponent : ViewComponent
     {
-        MyPortfolioContext portfolioContext=new MyPortfolioContext();
-        public IViewComponentResult Invoke()
+        private readonly MyPortfolioContext portfolioContext;
+
+        public FeatureComponent(MyPortfolioContext portfolioContext)
         {
-            var values=portfolioContext.Features.ToList();
-            return View(values);
+            this.portfolioContext = portfolioContext;
         }
 
+        public IViewComponentResult Invoke()
+        {
+            var values = portfolioContext.Features.ToList();
+            return View(values);
+        }
     }
 }

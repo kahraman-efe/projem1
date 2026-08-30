@@ -19,7 +19,12 @@
             <td>@item.Title</td>
             <td><a href="@item.Url" target="_blank">@item.Url</a></td>
             <td>@item.Icon</td>
-            <td><a class="delete-link" href="/SocialMedia/Delete/@item.SocialMediaId" onclick="return confirm('Silmek istediğine emin misin?')">Sil</a></td>
+            <td>
+                <form method="post" action="/SocialMedia/Delete/@item.SocialMediaId" onsubmit="return confirm('Silmek istediğine emin misin?')" class="delete-form">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="delete-link">Sil</button>
+                </form>
+            </td>
         </tr>
     }
 </table>

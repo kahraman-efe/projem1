@@ -513,8 +513,20 @@
       "PackagePath": "staticwebassets\\hola-master\\images\\count-bg.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\erdenlogo.jpg",
+      "PackagePath": "staticwebassets\\hola-master\\images\\erdenlogo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\erdenlogo1.jpg",
+      "PackagePath": "staticwebassets\\hola-master\\images\\erdenlogo1.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\foto.png",
       "PackagePath": "staticwebassets\\hola-master\\images\\foto.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\foto1.png",
+      "PackagePath": "staticwebassets\\hola-master\\images\\foto1.png"
     },
     {
       "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\hero-bg.jpg",

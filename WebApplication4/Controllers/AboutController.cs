@@ -30,6 +30,11 @@ namespace WebApplication4.Controllers
         [HttpPost]
         public IActionResult Index(About model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             var existing = _context.Abouts.FirstOrDefault();
 
             if (existing == null)

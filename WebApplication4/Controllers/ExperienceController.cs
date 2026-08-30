@@ -37,12 +37,18 @@ namespace WebApplication4.Controllers
         [HttpPost]
         public IActionResult Create(Experience model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             _context.Experiences.Add(model);
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
 
         [Authorize]
+        [HttpPost]
         public IActionResult Delete(int id)
         {
             var experience = _context.Experiences.FirstOrDefault(e => e.ExperienceID == id);

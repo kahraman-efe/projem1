@@ -30,11 +30,17 @@ namespace WebApplication4.Controllers
         [HttpPost]
         public IActionResult Create(Skill model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             _context.Skills.Add(model);
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
 
+        [HttpPost]
         public IActionResult Delete(int id)
         {
             var skill = _context.Skills.FirstOrDefault(s => s.SkillId == id);

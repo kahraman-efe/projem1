@@ -97,10 +97,37 @@
             background: #f9f9f9;
         }
 
+        .validation-summary {
+            background: #fdecea;
+            border: 1px solid #d43b2f;
+            color: #d43b2f;
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+        }
+
+            .validation-summary ul {
+                margin: 0;
+                padding-left: 1.25rem;
+            }
+
+        .delete-form {
+            display: inline;
+        }
+
         .delete-link {
             color: #d43b2f;
             text-decoration: none;
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
         }
+
+            .delete-link:hover {
+                text-decoration: underline;
+            }
 
         .top-bar {
             display: flex;

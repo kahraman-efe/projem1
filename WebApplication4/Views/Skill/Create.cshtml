@@ -5,6 +5,18 @@
 <h1>Yeni Yetenek Ekle</h1>
 <div class="form-box">
     <form method="post" action="/Skill/Create">
+    @Html.AntiForgeryToken()
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="validation-summary">
+            <ul>
+                @foreach (var err in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <li>@err.ErrorMessage</li>
+                }
+            </ul>
+        </div>
+    }
         <label>Yetenek Adı</label>
         <input type="text" name="Title" placeholder="Örn: C#" required />
         <label>Seviye (%)</label>

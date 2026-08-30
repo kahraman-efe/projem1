@@ -29,6 +29,11 @@ namespace WebApplication4.Controllers
         [HttpPost]
         public IActionResult Index(Contact model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             var existing = _context.Contacts.FirstOrDefault();
 
             if (existing == null)
@@ -48,7 +53,10 @@ namespace WebApplication4.Controllers
             return RedirectToAction("Index");
         }
 
+        // Bu action anonim (giriş yapmamış) ziyaretçiler tarafından kullanılır,
+        // bu yüzden global CSRF token zorunluluğundan hariç tutuluyor.
         [HttpPost]
+        [IgnoreAntiforgeryToken]
         public IActionResult SendMessage(string contactName, string contactSubject, string contactEmail, string contactMessage)
         {
             var message = new Message
@@ -60,13 +68,24 @@ namespace WebApplication4.Controllers
                 SendDate = DateTime.Now,
                 IsRead = false
             };
+
+            // Parametreler ayrı ayrı bağlandığı (model binding) için Message entity'sinin
+            // [Required]/[EmailAddress] gibi kurallarını burada elle tetikliyoruz.
+            if (!TryValidateModel(message))
+            {
+                TempData["ContactSuccess"] = false;
+                return Redirect("/Default/Index#contact");
+            }
+
             _context.Messages.Add(message);
             _context.SaveChanges();
             TempData["ContactSuccess"] = true;
             return Redirect("/Default/Index#contact");
         }
 
+        // Bu action da anonim ziyaretçiler tarafından kullanılır.
         [HttpPost]
+        [IgnoreAntiforgeryToken]
         public IActionResult SendQuickMessage(string contactEmail, string contactMessage)
         {
             var message = new Message
@@ -78,6 +97,12 @@ namespace WebApplication4.Controllers
                 SendDate = DateTime.Now,
                 IsRead = false
             };
+
+            if (!TryValidateModel(message))
+            {
+                return Redirect("/Default/Index#about");
+            }
+
             _context.Messages.Add(message);
             _context.SaveChanges();
             return Redirect("/Default/Index#about");

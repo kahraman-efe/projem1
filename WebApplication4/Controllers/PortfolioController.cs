@@ -32,6 +32,11 @@ namespace WebApplication4.Controllers
         [HttpPost]
         public IActionResult Create(Portfolio model, IFormFile? ImageFile)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             if (ImageFile != null && ImageFile.Length > 0)
             {
                 var izinliUzantilar = new[] { ".jpg", ".jpeg", ".png", ".webp" };
@@ -67,6 +72,7 @@ namespace WebApplication4.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpPost]
         public IActionResult Delete(int id)
         {
             var portfolio = _context.Portfolios.FirstOrDefault(p => p.PortfolioId == id);

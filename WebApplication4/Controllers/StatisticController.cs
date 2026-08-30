@@ -30,11 +30,17 @@ namespace WebApplication4.Controllers
         [HttpPost]
         public IActionResult Create(Statistic model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             _context.Statistics.Add(model);
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
 
+        [HttpPost]
         public IActionResult Delete(int id)
         {
             var statistic = _context.Statistics.FirstOrDefault(s => s.StatisticId == id);
