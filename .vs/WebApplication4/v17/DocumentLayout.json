@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "WebApplication4\\Views\\Default\\Index.cshtml",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Default\\Index.cshtml",
               "RelativeToolTip": "WebApplication4\\Views\\Default\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-02-09T01:59:05.091Z",
               "IsPinned": true,
@@ -70,7 +70,7 @@
               "RelativeDocumentMoniker": "WebApplication4\\Views\\Shared\\Components\\NavbarComponent\\Default.cshtml",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\Components\\NavbarComponent\\Default.cshtml",
               "RelativeToolTip": "WebApplication4\\Views\\Shared\\Components\\NavbarComponent\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-30T19:50:31.675Z",
               "EditorCaption": ""
@@ -85,8 +85,7 @@
               "RelativeToolTip": "WebApplication4\\Views\\Shared\\Components\\FeatureComponent\\Default.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAB7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-30T16:23:22.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-30T16:23:22.227Z"
             },
             {
               "$type": "Document",

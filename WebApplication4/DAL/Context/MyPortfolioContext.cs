@@ -31,7 +31,11 @@ namespace WebApplication4.DAL.Context
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
 
+        
+
         public DbSet<Admin>   Admins { get; set; }
         public DbSet<Statistic> Statistics { get; set; }
+
+        public DbSet<Education> Educations { get; set; }
     }
 }

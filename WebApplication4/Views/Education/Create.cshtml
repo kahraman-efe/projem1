@@ -1,0 +1,19 @@
+﻿@model WebApplication4.DAL.Entities.Education
+@{
+    Layout = "_AdminLayout";
+}
+<h1>Yeni Eğitim Ekle</h1>
+<div class="form-box">
+    <form method="post" action="/Education/Create">
+        <label>Okul Adı</label>
+        <input type="text" name="SchoolName" placeholder="Örn: XYZ Üniversitesi" required />
+
+        <label>Bölüm / Alan</label>
+        <input type="text" name="FieldOfStudy" placeholder="Örn: Bilgisayar Mühendisliği" required />
+
+        <label>Tarih</label>
+        <input type="text" name="Date" placeholder="Örn: 2021 - 2025" required />
+
+        <button type="submit">Kaydet</button>
+    </form>
+</div>
