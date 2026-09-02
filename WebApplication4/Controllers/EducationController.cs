@@ -40,7 +40,7 @@ namespace WebApplication4.Controllers
         [Authorize]
         public IActionResult Delete(int id)
         {
-            var education = _context.Educations.FirstOrDefault(e => e.EducationID == id);
+            var education = _context.Educations.FirstOrDefault(e => e.EducationId == id);
             if (education != null)
             {
                 _context.Educations.Remove(education);

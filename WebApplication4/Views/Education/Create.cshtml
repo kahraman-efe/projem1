@@ -5,6 +5,7 @@
 <h1>Yeni Eğitim Ekle</h1>
 <div class="form-box">
     <form method="post" action="/Education/Create">
+        @Html.AntiForgeryToken()
         <label>Okul Adı</label>
         <input type="text" name="SchoolName" placeholder="Örn: XYZ Üniversitesi" required />
 

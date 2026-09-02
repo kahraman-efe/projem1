@@ -15,8 +15,7 @@ builder.Services.AddControllersWithViews(options =>
 
 var connectionString = builder.Configuration.GetConnectionString("MyPortfolioDb");
 builder.Services.AddDbContext<MyPortfolioContext>(options =>
-    options.UseSqlServer(connectionString));
-
+    options.UseNpgsql(connectionString)); 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
