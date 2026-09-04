@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "E+mdLJyAU8CDFQlirKShzQPyyzBRcuJ2AmK4oWzP2Xk=",
+  "Hash": "1K6s8UMawwKeYWbFhAO3J1+Xa+WwAvZ/xaLYtfhLPiA=",
   "Source": "WebApplication4",
   "BasePath": "_content/WebApplication4",
   "Mode": "Default",
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "61n19gt1b8",
-      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "Fingerprint": "ggtyvowy4f",
+      "Integrity": "oCipjICsGidUVvndBhrzZlIjt9Q/Dq2QTyITVSnb+Xc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
@@ -120,6 +120,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\cv Kahraman_Efe_Erden.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\apple-touch-icon.png",
+      "SourceId": "WebApplication4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\",
+      "BasePath": "_content/WebApplication4",
+      "RelativePath": "hola-master/apple-touch-icon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kn1f44vo3u",
+      "Integrity": "4EUQH0i0mH+dEXlWuUpli6n6JKXuwbDI7icmpwgCGWc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\hola-master\\apple-touch-icon.png"
     },
     {
       "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\blog.html",
@@ -374,12 +395,12 @@
       "OriginalItemSpec": "wwwroot\\hola-master\\css\\vendor.css"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\favicon.ico",
+      "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\favicon.svg",
       "SourceId": "WebApplication4",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\",
       "BasePath": "_content/WebApplication4",
-      "RelativePath": "hola-master/favicon#[.{fingerprint}]?.ico",
+      "RelativePath": "hola-master/favicon#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -388,11 +409,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "usgwjifqa1",
-      "Integrity": "DgjgopP3tso43cu6+rQpKtHy1QeXxlA6qrMVxQrxTR8=",
+      "Fingerprint": "gqqco9ited",
+      "Integrity": "WE7er6KXS+s2uCJSSplPujSTObdwqkqNTTQiHjLQzaM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\hola-master\\favicon.ico"
+      "OriginalItemSpec": "wwwroot\\hola-master\\favicon.svg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\favicon-96x96.png",
+      "SourceId": "WebApplication4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\",
+      "BasePath": "_content/WebApplication4",
+      "RelativePath": "hola-master/favicon-96x96#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hu68wurrge",
+      "Integrity": "qZzI7dursPBmssaoB8AaHpJx0T+tP9ba4c8/fQfFbes=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\hola-master\\favicon-96x96.png"
     },
     {
       "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\fonts\\librebaskerville\\librebaskerville-bold-webfont.woff",
@@ -2117,6 +2159,27 @@
       "OriginalItemSpec": "wwwroot\\hola-master\\readme.txt"
     },
     {
+      "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\site.webmanifest",
+      "SourceId": "WebApplication4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\",
+      "BasePath": "_content/WebApplication4",
+      "RelativePath": "hola-master/site#[.{fingerprint}]?.webmanifest",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vwxzmjkmsq",
+      "Integrity": "kaeNT+FjFt+T7JGzOhXH7YSqsrDeiplZ2kDxCN/CFU4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\hola-master\\site.webmanifest"
+    },
+    {
       "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\styles.html",
       "SourceId": "WebApplication4",
       "SourceType": "Discovered",
@@ -2136,6 +2199,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\hola-master\\styles.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\web-app-manifest-192x192.png",
+      "SourceId": "WebApplication4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\",
+      "BasePath": "_content/WebApplication4",
+      "RelativePath": "hola-master/web-app-manifest-192x192#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1p5g1oij9m",
+      "Integrity": "1WGjRrwTA39OjAhTZNJVCZz02Nx9iqJOlUstXF8iaKk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\hola-master\\web-app-manifest-192x192.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\web-app-manifest-512x512.png",
+      "SourceId": "WebApplication4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\",
+      "BasePath": "_content/WebApplication4",
+      "RelativePath": "hola-master/web-app-manifest-512x512#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d8rv8x4hy4",
+      "Integrity": "nUfjO/ds5ncfSBnw83gmrm+vb1X9xKNX+4Xxi3zbVA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\hola-master\\web-app-manifest-512x512.png"
     },
     {
       "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\js\\site.js",
@@ -5057,7 +5162,7 @@
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico",
+      "Route": "favicon.ggtyvowy4f.ico",
       "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5067,7 +5172,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "15086"
         },
         {
           "Name": "Content-Type",
@@ -5075,11 +5180,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"oCipjICsGidUVvndBhrzZlIjt9Q/Dq2QTyITVSnb+Xc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 29 Aug 2026 17:47:10 GMT"
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5089,7 +5194,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "61n19gt1b8"
+          "Value": "ggtyvowy4f"
         },
         {
           "Name": "label",
@@ -5097,7 +5202,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-oCipjICsGidUVvndBhrzZlIjt9Q/Dq2QTyITVSnb+Xc="
         }
       ]
     },
@@ -5112,7 +5217,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "15086"
         },
         {
           "Name": "Content-Type",
@@ -5120,11 +5225,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"oCipjICsGidUVvndBhrzZlIjt9Q/Dq2QTyITVSnb+Xc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 29 Aug 2026 17:47:10 GMT"
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5134,7 +5239,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-oCipjICsGidUVvndBhrzZlIjt9Q/Dq2QTyITVSnb+Xc="
         }
       ]
     },
@@ -5217,6 +5322,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-s+HG9/7e5QguRkh+39CfuesasZpzMN4w3tUX2YLpR2M="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/apple-touch-icon.kn1f44vo3u.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\apple-touch-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4EUQH0i0mH+dEXlWuUpli6n6JKXuwbDI7icmpwgCGWc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kn1f44vo3u"
+        },
+        {
+          "Name": "label",
+          "Value": "hola-master/apple-touch-icon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4EUQH0i0mH+dEXlWuUpli6n6JKXuwbDI7icmpwgCGWc="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/apple-touch-icon.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\apple-touch-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4EUQH0i0mH+dEXlWuUpli6n6JKXuwbDI7icmpwgCGWc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4EUQH0i0mH+dEXlWuUpli6n6JKXuwbDI7icmpwgCGWc="
         }
       ]
     },
@@ -6205,8 +6392,8 @@
       ]
     },
     {
-      "Route": "hola-master/favicon.ico",
-      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\favicon.ico",
+      "Route": "hola-master/favicon.gqqco9ited.svg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\favicon.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6215,56 +6402,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1150"
+          "Value": "2907204"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/x-icon"
+          "Value": "image/svg+xml"
         },
         {
           "Name": "ETag",
-          "Value": "\"DgjgopP3tso43cu6+rQpKtHy1QeXxlA6qrMVxQrxTR8=\""
+          "Value": "\"WE7er6KXS+s2uCJSSplPujSTObdwqkqNTTQiHjLQzaM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 29 Aug 2026 17:47:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DgjgopP3tso43cu6+rQpKtHy1QeXxlA6qrMVxQrxTR8="
-        }
-      ]
-    },
-    {
-      "Route": "hola-master/favicon.usgwjifqa1.ico",
-      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\favicon.ico",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1150"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DgjgopP3tso43cu6+rQpKtHy1QeXxlA6qrMVxQrxTR8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 29 Aug 2026 17:47:10 GMT"
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6274,15 +6424,134 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "usgwjifqa1"
+          "Value": "gqqco9ited"
         },
         {
           "Name": "label",
-          "Value": "hola-master/favicon.ico"
+          "Value": "hola-master/favicon.svg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-DgjgopP3tso43cu6+rQpKtHy1QeXxlA6qrMVxQrxTR8="
+          "Value": "sha256-WE7er6KXS+s2uCJSSplPujSTObdwqkqNTTQiHjLQzaM="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/favicon.svg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\favicon.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2907204"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WE7er6KXS+s2uCJSSplPujSTObdwqkqNTTQiHjLQzaM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WE7er6KXS+s2uCJSSplPujSTObdwqkqNTTQiHjLQzaM="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/favicon-96x96.hu68wurrge.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\favicon-96x96.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qZzI7dursPBmssaoB8AaHpJx0T+tP9ba4c8/fQfFbes=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hu68wurrge"
+        },
+        {
+          "Name": "label",
+          "Value": "hola-master/favicon-96x96.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qZzI7dursPBmssaoB8AaHpJx0T+tP9ba4c8/fQfFbes="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/favicon-96x96.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\favicon-96x96.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18212"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qZzI7dursPBmssaoB8AaHpJx0T+tP9ba4c8/fQfFbes=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qZzI7dursPBmssaoB8AaHpJx0T+tP9ba4c8/fQfFbes="
         }
       ]
     },
@@ -13011,6 +13280,88 @@
       ]
     },
     {
+      "Route": "hola-master/site.vwxzmjkmsq.webmanifest",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\site.webmanifest",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "436"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/manifest+json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kaeNT+FjFt+T7JGzOhXH7YSqsrDeiplZ2kDxCN/CFU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vwxzmjkmsq"
+        },
+        {
+          "Name": "label",
+          "Value": "hola-master/site.webmanifest"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kaeNT+FjFt+T7JGzOhXH7YSqsrDeiplZ2kDxCN/CFU4="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/site.webmanifest",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\site.webmanifest",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "436"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/manifest+json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kaeNT+FjFt+T7JGzOhXH7YSqsrDeiplZ2kDxCN/CFU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kaeNT+FjFt+T7JGzOhXH7YSqsrDeiplZ2kDxCN/CFU4="
+        }
+      ]
+    },
+    {
       "Route": "hola-master/styles.f5la0ylrk8.html",
       "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\styles.html",
       "Selectors": [],
@@ -13089,6 +13440,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-bZ4tMCiU8O6yMEsC0ggMr5J/13vn1v+rJ8wnmVtVjK4="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/web-app-manifest-192x192.1p5g1oij9m.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\web-app-manifest-192x192.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63805"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1WGjRrwTA39OjAhTZNJVCZz02Nx9iqJOlUstXF8iaKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1p5g1oij9m"
+        },
+        {
+          "Name": "label",
+          "Value": "hola-master/web-app-manifest-192x192.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1WGjRrwTA39OjAhTZNJVCZz02Nx9iqJOlUstXF8iaKk="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/web-app-manifest-192x192.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\web-app-manifest-192x192.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63805"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1WGjRrwTA39OjAhTZNJVCZz02Nx9iqJOlUstXF8iaKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1WGjRrwTA39OjAhTZNJVCZz02Nx9iqJOlUstXF8iaKk="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/web-app-manifest-512x512.d8rv8x4hy4.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\web-app-manifest-512x512.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "398946"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nUfjO/ds5ncfSBnw83gmrm+vb1X9xKNX+4Xxi3zbVA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d8rv8x4hy4"
+        },
+        {
+          "Name": "label",
+          "Value": "hola-master/web-app-manifest-512x512.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nUfjO/ds5ncfSBnw83gmrm+vb1X9xKNX+4Xxi3zbVA0="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/web-app-manifest-512x512.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\web-app-manifest-512x512.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "398946"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nUfjO/ds5ncfSBnw83gmrm+vb1X9xKNX+4Xxi3zbVA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Sep 2026 13:04:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nUfjO/ds5ncfSBnw83gmrm+vb1X9xKNX+4Xxi3zbVA0="
         }
       ]
     },

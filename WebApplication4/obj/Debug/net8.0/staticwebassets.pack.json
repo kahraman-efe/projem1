@@ -325,6 +325,10 @@
       "PackagePath": "staticwebassets\\files\\cv Kahraman_Efe_Erden.pdf"
     },
     {
+      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\hola-master\\apple-touch-icon.png"
+    },
+    {
       "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\blog-single.html",
       "PackagePath": "staticwebassets\\hola-master\\blog-single.html"
     },
@@ -373,8 +377,12 @@
       "PackagePath": "staticwebassets\\hola-master\\css\\vendor.css"
     },
     {
-      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\favicon.ico",
-      "PackagePath": "staticwebassets\\hola-master\\favicon.ico"
+      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\favicon-96x96.png",
+      "PackagePath": "staticwebassets\\hola-master\\favicon-96x96.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\favicon.svg",
+      "PackagePath": "staticwebassets\\hola-master\\favicon.svg"
     },
     {
       "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\fonts\\librebaskerville\\librebaskerville-bold-webfont.woff",
@@ -705,8 +713,20 @@
       "PackagePath": "staticwebassets\\hola-master\\readme.txt"
     },
     {
+      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\site.webmanifest",
+      "PackagePath": "staticwebassets\\hola-master\\site.webmanifest"
+    },
+    {
       "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\styles.html",
       "PackagePath": "staticwebassets\\hola-master\\styles.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\web-app-manifest-192x192.png",
+      "PackagePath": "staticwebassets\\hola-master\\web-app-manifest-192x192.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\web-app-manifest-512x512.png",
+      "PackagePath": "staticwebassets\\hola-master\\web-app-manifest-512x512.png"
     },
     {
       "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\js\\site.js",

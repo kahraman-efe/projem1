@@ -1,6 +1,7 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\files\cv Kahraman_Efe_Erden.pdf
+wwwroot\hola-master\apple-touch-icon.png
 wwwroot\hola-master\blog.html
 wwwroot\hola-master\blog-single.html
 wwwroot\hola-master\css\base.css
@@ -13,7 +14,8 @@ wwwroot\hola-master\css\iconic\fonts\iconmonstr-iconic-font.woff
 wwwroot\hola-master\css\iconic\fonts\iconmonstr-iconic-font.woff2
 wwwroot\hola-master\css\main.css
 wwwroot\hola-master\css\vendor.css
-wwwroot\hola-master\favicon.ico
+wwwroot\hola-master\favicon.svg
+wwwroot\hola-master\favicon-96x96.png
 wwwroot\hola-master\fonts\librebaskerville\librebaskerville-bold-webfont.woff
 wwwroot\hola-master\fonts\librebaskerville\librebaskerville-bold-webfont.woff2
 wwwroot\hola-master\fonts\librebaskerville\librebaskerville-italic-webfont.woff
@@ -96,7 +98,10 @@ wwwroot\hola-master\js\modernizr.js
 wwwroot\hola-master\js\pace.min.js
 wwwroot\hola-master\js\plugins.js
 wwwroot\hola-master\readme.txt
+wwwroot\hola-master\site.webmanifest
 wwwroot\hola-master\styles.html
+wwwroot\hola-master\web-app-manifest-192x192.png
+wwwroot\hola-master\web-app-manifest-512x512.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
