@@ -237,3 +237,5 @@ wwwroot\Ready-Bootstrap-Dashboard-master\notifications.html
 wwwroot\Ready-Bootstrap-Dashboard-master\README.md
 wwwroot\Ready-Bootstrap-Dashboard-master\tables.html
 wwwroot\Ready-Bootstrap-Dashboard-master\typography.html
+wwwroot\robots.txt
+wwwroot\sitemap.xml

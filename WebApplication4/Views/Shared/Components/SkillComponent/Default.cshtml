@@ -7,8 +7,27 @@
         {
             <li>
                 <div class="progress percent@(item.Value)" style="width:@(item.Value)%"><span>@(item.Value)%</span></div>
-                <strong>@item.Title</strong>
+                <strong><i class="@GetSkillIcon(item.Title)"></i> @item.Title</strong>
             </li>
         }
     </ul>
 </div>
+
+@functions {
+    string GetSkillIcon(string title)
+    {
+        return title?.Trim().ToLower() switch
+        {
+            "c#" => "devicon-csharp-plain colored",
+            "html" => "devicon-html5-plain colored",
+            "css" => "devicon-css3-plain colored",
+            "javascript" => "devicon-javascript-plain colored",
+            "docker" => "devicon-docker-plain colored",
+            "python" => "devicon-python-plain colored",
+            "sql" or "sql server" => "devicon-microsoftsqlserver-plain colored",
+            ".net" or "asp.net core" => "devicon-dotnetcore-plain colored",
+            "git" => "devicon-git-plain colored",
+            _ => "devicon-devicon-plain"
+        };
+    }
+}
