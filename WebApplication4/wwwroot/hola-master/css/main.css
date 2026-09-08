@@ -1809,9 +1809,9 @@ input[type="button"] {
         }
 
     .home-content h1 {
-        font-family: "librebaskerville-bold", serif;
+        font-family: "montserrat-semibold", sans-serif;
         color: #FFFFFF;
-        font-size: 6rem;
+        font-size: 3.6rem;
         line-height: 1.35;
         margin-top: 0;
     }
@@ -2091,7 +2091,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 1500px) {
     .home-content h1 {
-        font-size: 5.2rem;
+        font-size: 3.1rem;
     }
 
     .home-content__main {
@@ -2101,7 +2101,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 1200px) {
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .home-content br {
@@ -2119,7 +2119,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 1000px) {
     .home-content h1 {
-        font-size: 4.8rem;
+        font-size: 2.9rem;
     }
 
     .home-content__main {
@@ -2150,7 +2150,7 @@ html.no-csstransitions .home-content__main {
         }
 
     .home-content h1 {
-        font-size: 4.4rem;
+        font-size: 2.6rem;
     }
 
     .home-content__main {
@@ -2164,7 +2164,7 @@ html.no-csstransitions .home-content__main {
     }
 
         .home-content h1 {
-            font-size: 4.2rem;
+            font-size: 2.5rem;
         }
 
     .home-content__main {
@@ -2195,7 +2195,7 @@ html.no-csstransitions .home-content__main {
     }
 
     .home-content h1 {
-        font-size: 3.8rem;
+        font-size: 2.3rem;
     }
 
     .home-content__main {
@@ -2211,7 +2211,7 @@ html.no-csstransitions .home-content__main {
     }
 
         .home-content h1 {
-            font-size: 3.5rem;
+            font-size: 2.1rem;
         }
 
     .home-content__main {

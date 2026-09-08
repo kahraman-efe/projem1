@@ -264,8 +264,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8nnfl4rg2f</Fingerprint>
-      <Integrity>jGWHMiRyUj6V1aPqB8NrtKNoEHvDdXISB//ODVq88Ho=</Integrity>
+      <Fingerprint>nli213q0h1</Fingerprint>
+      <Integrity>VQiYgU5/1WC8xaDf+pp3H4zw1WOXL+KQ/i84R+CuFtY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\hola-master\css\main.css'))</OriginalItemSpec>
