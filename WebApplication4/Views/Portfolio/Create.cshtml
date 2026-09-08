@@ -5,6 +5,18 @@
 <h1>Yeni Proje Ekle</h1>
 <div class="form-box">
     <form method="post" action="/Portfolio/Create" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="validation-summary">
+            <ul>
+                @foreach (var err in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <li>@err.ErrorMessage</li>
+                }
+            </ul>
+        </div>
+    }
         <label>Başlık</label>
         <input type="text" name="Title" required />
 

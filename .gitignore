@@ -1,0 +1,19 @@
+# Derlenmiş çıktılar (Visual Studio / dotnet build)
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio kullanıcıya özel dosyalar
+*.user
+.vs/
+
+# Rider / VS Code
+.idea/
+*.suo
+
+# Hassas / ortam bazlı ayarlar (gerçek connection string, API key vb. içerebilir)
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+
+# Loglar
+*.log

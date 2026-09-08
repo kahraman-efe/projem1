@@ -30,11 +30,17 @@ namespace WebApplication4.Controllers
         [HttpPost]
         public IActionResult Create(SocialMedia model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             _context.SocialMedias.Add(model);
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
 
+        [HttpPost]
         public IActionResult Delete(int id)
         {
             var socialMedia = _context.SocialMedias.FirstOrDefault(s => s.SocialMediaId == id);

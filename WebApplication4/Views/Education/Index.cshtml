@@ -1,0 +1,25 @@
+﻿@model List<WebApplication4.DAL.Entities.Education>
+@{
+    Layout = "_AdminLayout";
+}
+<div class="top-bar">
+    <h1>Eğitim Bilgileri</h1>
+    <a href="/Education/Create" class="btn">+ Yeni Eğitim Ekle</a>
+</div>
+<table>
+    <tr>
+        <th>Okul Adı</th>
+        <th>Bölüm / Alan</th>
+        <th>Tarih</th>
+        <th>İşlem</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.SchoolName</td>
+            <td>@item.FieldOfStudy</td>
+            <td>@item.Date</td>
+            <td><a class="delete-link" href="/Education/Delete/@item.EducationId" onclick="return confirm('Silmek istediğine emin misin?')">Sil</a></td>
+        </tr>
+    }
+</table>

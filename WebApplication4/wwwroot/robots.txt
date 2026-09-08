@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /Admin
+Disallow: /AdminLogin
+
+Sitemap: https://kahramanefe.com.tr/sitemap.xml

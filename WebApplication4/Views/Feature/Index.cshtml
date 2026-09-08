@@ -17,7 +17,12 @@
         <tr>
             <td>@item.Title</td>
             <td>@item.Description</td>
-            <td><a class="delete-link" href="/Feature/Delete/@item.FeatureId" onclick="return confirm('Silmek istediğine emin misin?')">Sil</a></td>
+            <td>
+                <form method="post" action="/Feature/Delete/@item.FeatureId" onsubmit="return confirm('Silmek istediğine emin misin?')" class="delete-form">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="delete-link">Sil</button>
+                </form>
+            </td>
         </tr>
     }
 </table>

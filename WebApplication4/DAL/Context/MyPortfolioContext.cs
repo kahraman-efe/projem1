@@ -13,12 +13,13 @@ namespace WebApplication4.DAL.Context
 {
     public class MyPortfolioContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        // Connection string artık burada değil; Program.cs içinde appsettings.json'dan
+        // okunup AddDbContext ile DI (dependency injection) üzerinden buraya veriliyor.
+        // Böylece connection string kaynak kodun içine gömülmüyor.
+        public MyPortfolioContext(DbContextOptions<MyPortfolioContext> options)
+            : base(options)
         {
-            optionsBuilder.UseSqlServer(
-        "Server=.\\SQLEXPRESS;Database=MyPortfolioDb;Trusted_Connection=True;TrustServerCertificate=True;Encrypt=False;");
         }
-        
 
         public DbSet<About> Abouts { get; set; }
         public DbSet<Contact> Contacts { get; set; }
@@ -30,7 +31,11 @@ namespace WebApplication4.DAL.Context
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
 
+        
+
         public DbSet<Admin>   Admins { get; set; }
         public DbSet<Statistic> Statistics { get; set; }
+
+        public DbSet<Education> Educations { get; set; }
     }
 }
