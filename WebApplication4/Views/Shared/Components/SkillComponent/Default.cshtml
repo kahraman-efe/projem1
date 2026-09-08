@@ -1,33 +1,68 @@
 ﻿@model List<WebApplication4.DAL.Entities.Skill>
 
 <div class="col-six tab-full right">
-    <h3>Bildiğim Programlama Dilleri && Frameworklar</h3>
-    <ul class="skill-bars">
-        @foreach (var item in Model)
-        {
-            <li>
-                <div class="progress percent@(item.Value)" style="width:@(item.Value)%"><span>@(item.Value)%</span></div>
-                <strong><i class="@GetSkillIcon(item.Title)"></i> @item.Title</strong>
-            </li>
-        }
-    </ul>
+	<h3>Bildiğim Programlama Dilleri && Frameworklar</h3>
+	<ul class="skill-bars">
+		@foreach (var item in Model)
+		{
+			<li>
+				<div class="progress percent@(item.Value)" style="width:@(item.Value)%"><span>@(item.Value)%</span></div>
+				<strong><i class="@GetSkillIcon(item.Title)"></i> @item.Title</strong>
+			</li>
+		}
+	</ul>
 </div>
 
 @functions {
-    string GetSkillIcon(string title)
-    {
-        return title?.Trim().ToLower() switch
-        {
-            "c#" => "devicon-csharp-plain colored",
-            "html" => "devicon-html5-plain colored",
-            "css" => "devicon-css3-plain colored",
-            "javascript" => "devicon-javascript-plain colored",
-            "docker" => "devicon-docker-plain colored",
-            "python" => "devicon-python-plain colored",
-            "sql" or "sql server" => "devicon-microsoftsqlserver-plain colored",
-            ".net" or "asp.net core" => "devicon-dotnetcore-plain colored",
-            "git" => "devicon-git-plain colored",
-            _ => "devicon-devicon-plain"
-        };
-    }
+	string GetSkillIcon(string title)
+	{
+		return title?.Trim().ToLower() switch
+		{
+
+			"c#" => "devicon-csharp-plain colored",
+			"html" or "html5" => "devicon-html5-plain colored",
+			"css" or "css3" => "devicon-css3-plain colored",
+			"javascript" or "js" => "devicon-javascript-plain colored",
+			"typescript" or "ts" => "devicon-typescript-plain colored",
+			"docker" => "devicon-docker-plain colored",
+			"kubernetes" or "k8s" => "devicon-kubernetes-plain colored",
+			"python" => "devicon-python-plain colored",
+			"sql" or "sql server" or "mssql" or "microsoft sql server" => "devicon-microsoftsqlserver-plain colored",
+			"mysql" => "devicon-mysql-plain colored",
+			"postgresql" or "postgres" => "devicon-postgresql-plain colored",
+			"mongodb" or "mongo db" => "devicon-mongodb-plain colored",
+			"redis" => "devicon-redis-plain colored",
+			".net" or "asp.net core" or "asp.net" or "dotnet" => "devicon-dotnetcore-plain colored",
+			"git" => "devicon-git-plain colored",
+			"github" => "devicon-github-original",
+			"gitlab" => "devicon-gitlab-plain colored",
+			"react" or "react.js" or "reactjs" => "devicon-react-original colored",
+			"vue" or "vue.js" or "vuejs" => "devicon-vuejs-plain colored",
+			"angular" => "devicon-angularjs-plain colored",
+			"node.js" or "nodejs" or "node" => "devicon-nodejs-plain colored",
+			"express" or "express.js" => "devicon-express-original",
+			"bootstrap" => "devicon-bootstrap-plain colored",
+			"tailwind" or "tailwindcss" => "devicon-tailwindcss-plain colored",
+			"java" => "devicon-java-plain colored",
+			"c++" or "cpp" => "devicon-cplusplus-plain colored",
+			"c" => "devicon-c-plain colored",
+			"php" => "devicon-php-plain colored",
+			"linux" => "devicon-linux-plain",
+			"azure" => "devicon-azure-plain colored",
+			"aws" or "amazon web services" => "devicon-amazonwebservices-original",
+			"jenkins" => "devicon-jenkins-line colored",
+			"figma" => "devicon-figma-plain colored",
+			"vscode" or "visual studio code" => "devicon-vscode-plain colored",
+			"visual studio" => "devicon-visualstudio-plain colored",
+			"npm" => "devicon-npm-original-wordmark colored",
+			"sass" or "scss" => "devicon-sass-original colored",
+			"graphql" => "devicon-graphql-plain colored",
+			"firebase" => "devicon-firebase-plain colored",
+			"webpack" => "devicon-webpack-plain colored",
+			_ => "devicon-devicon-plain"
+
+
+
+		};
+	}
 }
