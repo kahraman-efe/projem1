@@ -47,12 +47,12 @@ wwwroot\hola-master\images\avatars\user-04.jpg
 wwwroot\hola-master\images\avatars\user-05.jpg
 wwwroot\hola-master\images\blog\blog-bg-01.jpg
 wwwroot\hola-master\images\blog\blog-bg-02.jpg
-wwwroot\hola-master\images\contact-bg.jpg
 wwwroot\hola-master\images\count-bg.jpg
 wwwroot\hola-master\images\erdenlogo.jpg
 wwwroot\hola-master\images\erdenlogo1.jpg
 wwwroot\hola-master\images\foto.png
 wwwroot\hola-master\images\foto1.png
+wwwroot\hola-master\images\foto2.jpg
 wwwroot\hola-master\images\hero-bg.jpg
 wwwroot\hola-master\images\IMG_1418.HEIC
 wwwroot\hola-master\images\logo.png

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vnhnA2+uqliVyjfLwSHYqWms5bsC054ea2fcvnjSTtE=",
+  "Hash": "tlO1XqQWwee4qxw/gFXYn8zg1w01sHveE9nVFzxTJjo=",
   "Source": "WebApplication4",
   "BasePath": "_content/WebApplication4",
   "Mode": "Default",
@@ -367,8 +367,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nli213q0h1",
-      "Integrity": "VQiYgU5/1WC8xaDf+pp3H4zw1WOXL+KQ/i84R+CuFtY=",
+      "Fingerprint": "yr4usyrn1y",
+      "Integrity": "Urhrqv1SvEbKZ5ogh3KYAq4dlU9kRMEeHeOPkhTtfOc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\hola-master\\css\\main.css"
@@ -1088,27 +1088,6 @@
       "OriginalItemSpec": "wwwroot\\hola-master\\images\\blog\\blog-bg-02.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\contact-bg.jpg",
-      "SourceId": "WebApplication4",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\",
-      "BasePath": "_content/WebApplication4",
-      "RelativePath": "hola-master/images/contact-bg#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "mc57y53ee3",
-      "Integrity": "KqNfQzbN7ALnEaGnlxJvblGEcnAcdkzcFV5Sfg/c9Qc=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\hola-master\\images\\contact-bg.jpg"
-    },
-    {
       "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\count-bg.jpg",
       "SourceId": "WebApplication4",
       "SourceType": "Discovered",
@@ -1212,6 +1191,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\hola-master\\images\\foto1.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\foto2.jpg",
+      "SourceId": "WebApplication4",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\",
+      "BasePath": "_content/WebApplication4",
+      "RelativePath": "hola-master/images/foto2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "arcektr62t",
+      "Integrity": "6m+Obyk+sQ6JLSU5kib1XCELHTAVHbX5RqW8jJ49cq8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\hola-master\\images\\foto2.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\hero-bg.jpg",
@@ -6280,7 +6280,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "95383"
+          "Value": "95405"
         },
         {
           "Name": "Content-Type",
@@ -6288,11 +6288,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VQiYgU5/1WC8xaDf+pp3H4zw1WOXL+KQ/i84R+CuFtY=\""
+          "Value": "\"Urhrqv1SvEbKZ5ogh3KYAq4dlU9kRMEeHeOPkhTtfOc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Sep 2026 19:49:03 GMT"
+          "Value": "Wed, 09 Sep 2026 23:00:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6302,12 +6302,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VQiYgU5/1WC8xaDf+pp3H4zw1WOXL+KQ/i84R+CuFtY="
+          "Value": "sha256-Urhrqv1SvEbKZ5ogh3KYAq4dlU9kRMEeHeOPkhTtfOc="
         }
       ]
     },
     {
-      "Route": "hola-master/css/main.nli213q0h1.css",
+      "Route": "hola-master/css/main.yr4usyrn1y.css",
       "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\css\\main.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6317,7 +6317,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "95383"
+          "Value": "95405"
         },
         {
           "Name": "Content-Type",
@@ -6325,11 +6325,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VQiYgU5/1WC8xaDf+pp3H4zw1WOXL+KQ/i84R+CuFtY=\""
+          "Value": "\"Urhrqv1SvEbKZ5ogh3KYAq4dlU9kRMEeHeOPkhTtfOc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Sep 2026 19:49:03 GMT"
+          "Value": "Wed, 09 Sep 2026 23:00:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6339,7 +6339,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nli213q0h1"
+          "Value": "yr4usyrn1y"
         },
         {
           "Name": "label",
@@ -6347,7 +6347,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-VQiYgU5/1WC8xaDf+pp3H4zw1WOXL+KQ/i84R+CuFtY="
+          "Value": "sha256-Urhrqv1SvEbKZ5ogh3KYAq4dlU9kRMEeHeOPkhTtfOc="
         }
       ]
     },
@@ -9140,88 +9140,6 @@
       ]
     },
     {
-      "Route": "hola-master/images/contact-bg.jpg",
-      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\contact-bg.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "511975"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KqNfQzbN7ALnEaGnlxJvblGEcnAcdkzcFV5Sfg/c9Qc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 29 Aug 2026 17:47:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-KqNfQzbN7ALnEaGnlxJvblGEcnAcdkzcFV5Sfg/c9Qc="
-        }
-      ]
-    },
-    {
-      "Route": "hola-master/images/contact-bg.mc57y53ee3.jpg",
-      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\contact-bg.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "511975"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KqNfQzbN7ALnEaGnlxJvblGEcnAcdkzcFV5Sfg/c9Qc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 29 Aug 2026 17:47:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mc57y53ee3"
-        },
-        {
-          "Name": "label",
-          "Value": "hola-master/images/contact-bg.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-KqNfQzbN7ALnEaGnlxJvblGEcnAcdkzcFV5Sfg/c9Qc="
-        }
-      ]
-    },
-    {
       "Route": "hola-master/images/count-bg.ib04tz7vrn.jpg",
       "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\count-bg.jpg",
       "Selectors": [],
@@ -9628,6 +9546,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-nf2rnVSO5Nk1ux5520ELaBycy8X+C5+UqXgZYIYzgj0="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/images/foto2.arcektr62t.jpg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\foto2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6m+Obyk+sQ6JLSU5kib1XCELHTAVHbX5RqW8jJ49cq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Sep 2026 22:43:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "arcektr62t"
+        },
+        {
+          "Name": "label",
+          "Value": "hola-master/images/foto2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6m+Obyk+sQ6JLSU5kib1XCELHTAVHbX5RqW8jJ49cq8="
+        }
+      ]
+    },
+    {
+      "Route": "hola-master/images/foto2.jpg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\foto2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6m+Obyk+sQ6JLSU5kib1XCELHTAVHbX5RqW8jJ49cq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Sep 2026 22:43:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6m+Obyk+sQ6JLSU5kib1XCELHTAVHbX5RqW8jJ49cq8="
         }
       ]
     },

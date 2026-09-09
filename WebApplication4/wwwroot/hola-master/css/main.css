@@ -25,7 +25,7 @@
  *      ## skillbars
  *  # common and reusable theme styles 
  *      ## section intro
- *      ## blog-list
+ *      ## blog-lis
  *  # header styles
  *      ## header logo
  *      ## mobile menu toggle
@@ -3108,9 +3108,10 @@ html.no-csstransitions .home-content__main {
 
 .s-contact {
     background-color: #151515;
-    background-image: url("../images/contact-bg.jpg");
+    background-image: url("../images/foto2.jpg");
     background-repeat: no-repeat;
-    background-position: center, center;
+    background-position: center center;
+    background-size: cover;
     padding-top: 13.2rem;
     padding-bottom: 12rem;
     color: rgba(255, 255, 255, 0.5);

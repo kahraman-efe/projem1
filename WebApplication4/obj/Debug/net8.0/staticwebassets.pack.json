@@ -513,10 +513,6 @@
       "PackagePath": "staticwebassets\\hola-master\\images\\blog\\blog-bg-02.jpg"
     },
     {
-      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\contact-bg.jpg",
-      "PackagePath": "staticwebassets\\hola-master\\images\\contact-bg.jpg"
-    },
-    {
       "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\count-bg.jpg",
       "PackagePath": "staticwebassets\\hola-master\\images\\count-bg.jpg"
     },
@@ -535,6 +531,10 @@
     {
       "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\foto1.png",
       "PackagePath": "staticwebassets\\hola-master\\images\\foto1.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\foto2.jpg",
+      "PackagePath": "staticwebassets\\hola-master\\images\\foto2.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\images\\hero-bg.jpg",
