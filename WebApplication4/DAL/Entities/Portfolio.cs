@@ -1,7 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace WebApplication4.DAL.Entities
 {
+    public enum ProjectStatus
+    {
+        Tamamlandi = 0,
+        Gelisiyor = 1
+    }
+
     public class Portfolio
     {
         public int PortfolioId { get; set; }
@@ -14,6 +21,7 @@ namespace WebApplication4.DAL.Entities
         public string Subtitle { get; set; }
 
         [StringLength(500)]
+        [ValidateNever]
         public string ImageURL { get; set; }
 
         [StringLength(500)]
@@ -22,5 +30,7 @@ namespace WebApplication4.DAL.Entities
 
         [StringLength(2000)]
         public string Description { get; set; }
+
+        public ProjectStatus Status { get; set; } = ProjectStatus.Tamamlandi;
     }
 }

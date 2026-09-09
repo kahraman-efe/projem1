@@ -1,4 +1,8 @@
 ﻿@model List<WebApplication4.DAL.Entities.Portfolio>
+@{
+    var bitenler = Model.Where(p => p.Status == WebApplication4.DAL.Entities.ProjectStatus.Tamamlandi).ToList();
+    var gelisenler = Model.Where(p => p.Status == WebApplication4.DAL.Entities.ProjectStatus.Gelisiyor).ToList();
+}
 
 <section id="works" class="s-works target-section">
 
@@ -10,43 +14,94 @@
         </div>
     </div>
 
-    <div class="row masonry-wrap">
-        <div class="masonry">
-
-            @foreach (var item in Model)
-            {
-                <div class="masonry__brick">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-                            <a href="@item.ImageURL" class="thumb-link" title="@item.Title" data-size="1050x700">
-                                <img src="@item.ImageURL" alt="@item.Title">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                @item.Title
-                            </h3>
-                            <p class="item-folio__cat">
-                                @item.Subtitle
-                            </p>
-                        </div>
-
-                        <a href="@item.URL" class="item-folio__project-link" title="Project link">
-                            <i class="im im-link"></i>
-                        </a>
-
-                        <div class="item-folio__caption">
-                            <p>@item.Description</p>
-                        </div>
-
-                    </div> <!-- end item-folio -->
-                </div> <!-- end masonry__brick -->
-            }
-
+    @if (bitenler.Any())
+    {
+        <div class="row narrow section-intro">
+            <div class="col-full">
+                <h3>Tamamlanan Projeler</h3>
+            </div>
         </div>
-    </div> <!-- end masonry -->
+        <div class="row masonry-wrap">
+            <div class="masonry">
+                @foreach (var item in bitenler)
+                {
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="@item.ImageURL" class="thumb-link" title="@item.Title" data-size="1050x700">
+                                    <img src="@item.ImageURL" alt="@item.Title">
+                                    <span class="shadow-overlay"></span>
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    @item.Title
+                                </h3>
+                                <p class="item-folio__cat">
+                                    @item.Subtitle
+                                </p>
+                            </div>
+
+                            <a href="@item.URL" class="item-folio__project-link" title="Project link">
+                                <i class="im im-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>@item.Description</p>
+                            </div>
+
+                        </div> <!-- end item-folio -->
+                    </div> <!-- end masonry__brick -->
+                }
+            </div>
+        </div> <!-- end masonry -->
+    }
+
+    @if (gelisenler.Any())
+    {
+        <div class="row narrow section-intro">
+            <div class="col-full">
+                <h3>Gelişmekte Olan Projeler</h3>
+            </div>
+        </div>
+        <div class="row masonry-wrap">
+            <div class="masonry">
+                @foreach (var item in gelisenler)
+                {
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="@item.ImageURL" class="thumb-link" title="@item.Title" data-size="1050x700">
+                                    <img src="@item.ImageURL" alt="@item.Title">
+                                    <span class="shadow-overlay"></span>
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    @item.Title
+                                </h3>
+                                <p class="item-folio__cat">
+                                    @item.Subtitle
+                                </p>
+                            </div>
+
+                            <a href="@item.URL" class="item-folio__project-link" title="Project link">
+                                <i class="im im-link"></i>
+                            </a>
+
+                            <div class="item-folio__caption">
+                                <p>@item.Description</p>
+                            </div>
+
+                        </div> <!-- end item-folio -->
+                    </div> <!-- end masonry__brick -->
+                }
+            </div>
+        </div> <!-- end masonry -->
+    }
 
 </section>

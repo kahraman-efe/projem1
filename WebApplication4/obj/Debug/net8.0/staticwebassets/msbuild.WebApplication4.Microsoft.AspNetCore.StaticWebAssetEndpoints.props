@@ -172,13 +172,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\hola-master\css\main.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VQiYgU5/1WC8xaDf\u002Bpp3H4zw1WOXL\u002BKQ/i84R\u002BCuFtY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"95383"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VQiYgU5/1WC8xaDf\u002Bpp3H4zw1WOXL\u002BKQ/i84R\u002BCuFtY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Sep 2026 18:37:13 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"95383"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VQiYgU5/1WC8xaDf\u002Bpp3H4zw1WOXL\u002BKQ/i84R\u002BCuFtY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Sep 2026 19:49:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WebApplication4/hola-master/css/main.nli213q0h1.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\hola-master\css\main.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nli213q0h1"},{"Name":"integrity","Value":"sha256-VQiYgU5/1WC8xaDf\u002Bpp3H4zw1WOXL\u002BKQ/i84R\u002BCuFtY="},{"Name":"label","Value":"_content/WebApplication4/hola-master/css/main.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"95383"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VQiYgU5/1WC8xaDf\u002Bpp3H4zw1WOXL\u002BKQ/i84R\u002BCuFtY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Sep 2026 18:37:13 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"95383"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VQiYgU5/1WC8xaDf\u002Bpp3H4zw1WOXL\u002BKQ/i84R\u002BCuFtY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Sep 2026 19:49:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WebApplication4/hola-master/css/vendor.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\hola-master\css\vendor.css'))</AssetFile>

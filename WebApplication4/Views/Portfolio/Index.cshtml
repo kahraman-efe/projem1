@@ -11,6 +11,7 @@
         <th>Görsel</th>
         <th>Başlık</th>
         <th>Alt Başlık</th>
+        <th>Durum</th>
         <th>Link</th>
         <th>İşlem</th>
     </tr>
@@ -20,6 +21,7 @@
             <td><img class="thumb" src="@item.ImageURL" /></td>
             <td>@item.Title</td>
             <td>@item.Subtitle</td>
+            <td>@(item.Status == WebApplication4.DAL.Entities.ProjectStatus.Tamamlandi ? "Tamamlandı" : "Gelişmekte Olan")</td>
             <td><a href="@item.URL" target="_blank">@item.URL</a></td>
             <td>
                 <form method="post" action="/Portfolio/Delete/@item.PortfolioId" onsubmit="return confirm('Silmek istediğine emin misin?')" class="delete-form">
