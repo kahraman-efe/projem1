@@ -65,7 +65,7 @@ namespace WebApplication4.Controllers
                 Subject = contactSubject,
                 Email = contactEmail,
                 MessageDetail = contactMessage,
-                SendDate = DateTime.Now,
+                SendDate = DateTime.UtcNow,
                 IsRead = false
             };
 
@@ -94,7 +94,7 @@ namespace WebApplication4.Controllers
                 Subject = "Hızlı Mesaj (About formu)",
                 Email = contactEmail,
                 MessageDetail = contactMessage,
-                SendDate = DateTime.Now,
+                SendDate = DateTime.UtcNow,
                 IsRead = false
             };
 

@@ -1722,8 +1722,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8b38qlxh9f</Fingerprint>
-      <Integrity>PB/YVYTTc1TfMOekQ1OnLvYUnbnmypHdB9tHMSruVgY=</Integrity>
+      <Fingerprint>5lwv00mtja</Fingerprint>
+      <Integrity>R6nFUrDPkBi349RQaxMeMJ3+29aWykPKg1I1mP320rI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\hola-master\js\main.js'))</OriginalItemSpec>

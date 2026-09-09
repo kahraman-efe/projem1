@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lp8wFkvbsXUYp2EFdYkyzbC67umql9ANYhtHwWhJIXc=",
+  "Hash": "vnhnA2+uqliVyjfLwSHYqWms5bsC054ea2fcvnjSTtE=",
   "Source": "WebApplication4",
   "BasePath": "_content/WebApplication4",
   "Mode": "Default",
@@ -2068,8 +2068,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8b38qlxh9f",
-      "Integrity": "PB/YVYTTc1TfMOekQ1OnLvYUnbnmypHdB9tHMSruVgY=",
+      "Fingerprint": "5lwv00mtja",
+      "Integrity": "R6nFUrDPkBi349RQaxMeMJ3+29aWykPKg1I1mP320rI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\hola-master\\js\\main.js"
@@ -12912,7 +12912,7 @@
       ]
     },
     {
-      "Route": "hola-master/js/main.8b38qlxh9f.js",
+      "Route": "hola-master/js/main.5lwv00mtja.js",
       "AssetFile": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\js\\main.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -12922,7 +12922,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12222"
+          "Value": "10807"
         },
         {
           "Name": "Content-Type",
@@ -12930,11 +12930,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PB/YVYTTc1TfMOekQ1OnLvYUnbnmypHdB9tHMSruVgY=\""
+          "Value": "\"R6nFUrDPkBi349RQaxMeMJ3+29aWykPKg1I1mP320rI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 29 Aug 2026 17:47:13 GMT"
+          "Value": "Wed, 09 Sep 2026 17:07:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12944,7 +12944,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8b38qlxh9f"
+          "Value": "5lwv00mtja"
         },
         {
           "Name": "label",
@@ -12952,7 +12952,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-PB/YVYTTc1TfMOekQ1OnLvYUnbnmypHdB9tHMSruVgY="
+          "Value": "sha256-R6nFUrDPkBi349RQaxMeMJ3+29aWykPKg1I1mP320rI="
         }
       ]
     },
@@ -12967,7 +12967,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12222"
+          "Value": "10807"
         },
         {
           "Name": "Content-Type",
@@ -12975,11 +12975,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PB/YVYTTc1TfMOekQ1OnLvYUnbnmypHdB9tHMSruVgY=\""
+          "Value": "\"R6nFUrDPkBi349RQaxMeMJ3+29aWykPKg1I1mP320rI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 29 Aug 2026 17:47:13 GMT"
+          "Value": "Wed, 09 Sep 2026 17:07:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12989,7 +12989,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PB/YVYTTc1TfMOekQ1OnLvYUnbnmypHdB9tHMSruVgY="
+          "Value": "sha256-R6nFUrDPkBi349RQaxMeMJ3+29aWykPKg1I1mP320rI="
         }
       ]
     },

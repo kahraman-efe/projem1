@@ -1140,17 +1140,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vu3kklfnoq"},{"Name":"integrity","Value":"sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="},{"Name":"label","Value":"_content/WebApplication4/hola-master/js/jquery-3.2.1.min.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"86659"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 29 Aug 2026 17:47:13 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebApplication4/hola-master/js/main.8b38qlxh9f.js">
+    <StaticWebAssetEndpoint Include="_content/WebApplication4/hola-master/js/main.5lwv00mtja.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\hola-master\js\main.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8b38qlxh9f"},{"Name":"integrity","Value":"sha256-PB/YVYTTc1TfMOekQ1OnLvYUnbnmypHdB9tHMSruVgY="},{"Name":"label","Value":"_content/WebApplication4/hola-master/js/main.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12222"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022PB/YVYTTc1TfMOekQ1OnLvYUnbnmypHdB9tHMSruVgY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 29 Aug 2026 17:47:13 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5lwv00mtja"},{"Name":"integrity","Value":"sha256-R6nFUrDPkBi349RQaxMeMJ3\u002B29aWykPKg1I1mP320rI="},{"Name":"label","Value":"_content/WebApplication4/hola-master/js/main.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10807"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022R6nFUrDPkBi349RQaxMeMJ3\u002B29aWykPKg1I1mP320rI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 09 Sep 2026 17:07:24 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WebApplication4/hola-master/js/main.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\hola-master\js\main.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PB/YVYTTc1TfMOekQ1OnLvYUnbnmypHdB9tHMSruVgY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12222"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022PB/YVYTTc1TfMOekQ1OnLvYUnbnmypHdB9tHMSruVgY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 29 Aug 2026 17:47:13 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-R6nFUrDPkBi349RQaxMeMJ3\u002B29aWykPKg1I1mP320rI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"10807"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022R6nFUrDPkBi349RQaxMeMJ3\u002B29aWykPKg1I1mP320rI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 09 Sep 2026 17:07:24 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WebApplication4/hola-master/js/modernizr.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\hola-master\js\modernizr.js'))</AssetFile>

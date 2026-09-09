@@ -45,12 +45,12 @@
             </form>
 
             <!-- contact-warning -->
-            <div class="message-warning">
-                Something went wrong. Please try again.
+            <div class="message-warning" style="display:@(TempData["ContactSuccess"] != null && !(bool)TempData["ContactSuccess"] ? "block" : "none")">
+                Mesajınız gönderilemedi. Lütfen tekrar deneyin.
             </div>
 
             <!-- contact-success -->
-            <div class="message-success">
+            <div class="message-success" style="display:@(TempData["ContactSuccess"] != null && (bool)TempData["ContactSuccess"] ? "block" : "none")">
                 Your message was sent, thank you!<br>
             </div>
 
