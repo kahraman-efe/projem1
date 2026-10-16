@@ -3,56 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\WebApplication4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\dal\\entities\\testimonial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\dal\\entities\\testimonial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\dal\\context\\myportfoliocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\dal\\context\\myportfoliocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\controllers\\adminlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\controllers\\adminlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\webapplication4.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\webapplication4.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\wwwroot\\hola-master\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\wwwroot\\hola-master\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\shared\\components\\portfoliocomponent\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\shared\\components\\portfoliocomponent\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\shared\\components\\featurecomponent\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\shared\\components\\featurecomponent\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\layout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\layout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\controllers\\featurecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\controllers\\featurecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\message\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\message\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\shared\\components\\footercomponent\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\shared\\components\\footercomponent\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\shared\\components\\skillcomponent\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\shared\\components\\skillcomponent\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\migrations\\20260901203048_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\migrations\\20260901203048_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|c:\\users\\hp\\source\\repos\\webapplication4\\webapplication4\\views\\portfolio\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA0C2DAB-75DC-4D4F-8103-5234DA054FD6}|WebApplication4\\WebApplication4.csproj|solutionrelative:webapplication4\\views\\portfolio\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,168 +74,205 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AdminLoginController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\AdminLoginController.cs",
-              "RelativeDocumentMoniker": "WebApplication4\\Controllers\\AdminLoginController.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\AdminLoginController.cs",
-              "RelativeToolTip": "WebApplication4\\Controllers\\AdminLoginController.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAUwJUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T19:21:10.641Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Default\\Index.cshtml",
               "RelativeDocumentMoniker": "WebApplication4\\Views\\Default\\Index.cshtml",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Default\\Index.cshtml",
               "RelativeToolTip": "WebApplication4\\Views\\Default\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-09-02T17:56:31.439Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "WebApplication4\\Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "WebApplication4\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-02T17:55:51.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Portfolio\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication4\\Views\\Portfolio\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Portfolio\\Index.cshtml",
-              "RelativeToolTip": "WebApplication4\\Views\\Portfolio\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-02T17:55:38.394Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Layout\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication4\\Views\\Layout\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Layout\\Index.cshtml",
-              "RelativeToolTip": "WebApplication4\\Views\\Layout\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-02T17:55:34.517Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Message\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication4\\Views\\Message\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Message\\Index.cshtml",
-              "RelativeToolTip": "WebApplication4\\Views\\Message\\Index.cshtml",
+              "DocumentIndex": 0,
+              "Title": "Testimonial.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\DAL\\Entities\\Testimonial.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\DAL\\Entities\\Testimonial.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\DAL\\Entities\\Testimonial.cs",
+              "RelativeToolTip": "WebApplication4\\DAL\\Entities\\Testimonial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-02T17:55:32.231Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication4\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebApplication4\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-02T17:55:18.81Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Contact\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication4\\Views\\Contact\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Contact\\Index.cshtml",
-              "RelativeToolTip": "WebApplication4\\Views\\Contact\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-02T17:55:14.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\About\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication4\\Views\\About\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\About\\Index.cshtml",
-              "RelativeToolTip": "WebApplication4\\Views\\About\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-02T17:55:08.619Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication4\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "WebApplication4\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-02T17:51:14.198Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T00:40:50.92Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MyPortfolioContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\DAL\\Context\\MyPortfolioContext.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\DAL\\Context\\MyPortfolioContext.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\DAL\\Context\\MyPortfolioContext.cs",
+              "RelativeToolTip": "WebApplication4\\DAL\\Context\\MyPortfolioContext.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T00:28:44.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\appsettings.Development.json",
               "RelativeDocumentMoniker": "WebApplication4\\appsettings.Development.json",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\appsettings.Development.json",
               "RelativeToolTip": "WebApplication4\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAADLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-01T20:32:28.172Z"
+              "WhenOpened": "2026-10-03T18:26:56.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication4\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\appsettings.json",
+              "RelativeToolTip": "WebApplication4\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-03T13:19:10.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\Components\\PortfolioComponent\\Default.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\Shared\\Components\\PortfolioComponent\\Default.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\Components\\PortfolioComponent\\Default.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\Shared\\Components\\PortfolioComponent\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-11T13:15:13.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\Components\\FeatureComponent\\Default.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\Shared\\Components\\FeatureComponent\\Default.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\Components\\FeatureComponent\\Default.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\Shared\\Components\\FeatureComponent\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-11T13:15:04.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "WebApplication4\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAawFYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T01:20:01.802Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "20260901203048_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Migrations\\20260901203048_InitialCreate.cs",
-              "RelativeDocumentMoniker": "WebApplication4\\Migrations\\20260901203048_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Migrations\\20260901203048_InitialCreate.cs",
-              "RelativeToolTip": "WebApplication4\\Migrations\\20260901203048_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T20:30:48.596Z"
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\Components\\FooterComponent\\Default.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\Shared\\Components\\FooterComponent\\Default.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\Components\\FooterComponent\\Default.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\Shared\\Components\\FooterComponent\\Default.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAawC4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-11T01:18:26.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\Components\\SkillComponent\\Default.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\Shared\\Components\\SkillComponent\\Default.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Shared\\Components\\SkillComponent\\Default.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\Shared\\Components\\SkillComponent\\Default.cshtml",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAwDMAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-10T23:07:56Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "WebApplication4.csproj",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\WebApplication4.csproj",
-              "RelativeDocumentMoniker": "WebApplication4\\WebApplication4.csproj",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\WebApplication4.csproj",
-              "RelativeToolTip": "WebApplication4\\WebApplication4.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-01T20:09:23.459Z"
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Program.cs",
+              "RelativeToolTip": "WebApplication4\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T00:13:25.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Portfolio\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\Portfolio\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Portfolio\\Index.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\Portfolio\\Index.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-10T00:13:00.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PortfolioController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\PortfolioController.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Controllers\\PortfolioController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\PortfolioController.cs",
+              "RelativeToolTip": "WebApplication4\\Controllers\\PortfolioController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAQwGIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T00:08:02.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FeatureController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\FeatureController.cs",
+              "RelativeDocumentMoniker": "WebApplication4\\Controllers\\FeatureController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Controllers\\FeatureController.cs",
+              "RelativeToolTip": "WebApplication4\\Controllers\\FeatureController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T00:06:25.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Portfolio\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebApplication4\\Views\\Portfolio\\Create.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\Views\\Portfolio\\Create.cshtml",
+              "RelativeToolTip": "WebApplication4\\Views\\Portfolio\\Create.cshtml",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAAGwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-10T00:02:48.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "main.css",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\css\\main.css",
+              "RelativeDocumentMoniker": "WebApplication4\\wwwroot\\hola-master\\css\\main.css",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\hola-master\\css\\main.css",
+              "RelativeToolTip": "WebApplication4\\wwwroot\\hola-master\\css\\main.css",
+              "ViewState": "AgIAAHUQAAAAAAAAAAAUwIYQAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-09-08T18:26:50.928Z"
             }
           ]
         }
