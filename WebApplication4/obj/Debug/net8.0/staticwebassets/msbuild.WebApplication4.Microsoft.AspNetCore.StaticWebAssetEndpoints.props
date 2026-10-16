@@ -171,14 +171,14 @@
     <StaticWebAssetEndpoint Include="_content/WebApplication4/hola-master/css/main.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\hola-master\css\main.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Urhrqv1SvEbKZ5ogh3KYAq4dlU9kRMEeHeOPkhTtfOc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"95405"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Urhrqv1SvEbKZ5ogh3KYAq4dlU9kRMEeHeOPkhTtfOc=\u0022"},{"Name":"Last-Modified","Value":"Wed, 09 Sep 2026 23:00:29 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-rRM45LM8X2KS7xZeuIQTjuToIGa5gIewjFoyjjCW\u002Bxg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"95407"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022rRM45LM8X2KS7xZeuIQTjuToIGa5gIewjFoyjjCW\u002Bxg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Sep 2026 13:27:13 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebApplication4/hola-master/css/main.yr4usyrn1y.css">
+    <StaticWebAssetEndpoint Include="_content/WebApplication4/hola-master/css/main.f9gowpi1f3.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\hola-master\css\main.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yr4usyrn1y"},{"Name":"integrity","Value":"sha256-Urhrqv1SvEbKZ5ogh3KYAq4dlU9kRMEeHeOPkhTtfOc="},{"Name":"label","Value":"_content/WebApplication4/hola-master/css/main.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"95405"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Urhrqv1SvEbKZ5ogh3KYAq4dlU9kRMEeHeOPkhTtfOc=\u0022"},{"Name":"Last-Modified","Value":"Wed, 09 Sep 2026 23:00:29 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f9gowpi1f3"},{"Name":"integrity","Value":"sha256-rRM45LM8X2KS7xZeuIQTjuToIGa5gIewjFoyjjCW\u002Bxg="},{"Name":"label","Value":"_content/WebApplication4/hola-master/css/main.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"95407"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022rRM45LM8X2KS7xZeuIQTjuToIGa5gIewjFoyjjCW\u002Bxg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Sep 2026 13:27:13 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WebApplication4/hola-master/css/vendor.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\hola-master\css\vendor.css'))</AssetFile>

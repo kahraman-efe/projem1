@@ -1,5 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using System;
 using WebApplication4.DAL.Context;
 using WebApplication4.DAL.Entities;
 
@@ -30,7 +34,7 @@ namespace WebApplication4.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Portfolio model, IFormFile? ImageFile)
+        public async Task<IActionResult> Create(Portfolio model, IFormFile? ImageFile)
         {
             if (!ModelState.IsValid)
             {
@@ -48,7 +52,7 @@ namespace WebApplication4.Controllers
                     return View(model);
                 }
 
-                if (ImageFile.Length > 5 * 1024 * 1024) // 5MB
+                if (ImageFile.Length > 5 * 1024 * 1024)
                 {
                     ModelState.AddModelError("", "Dosya boyutu 5MB'ı geçemez.");
                     return View(model);
@@ -56,24 +60,32 @@ namespace WebApplication4.Controllers
 
                 var dosyaAdi = $"{Guid.NewGuid()}{uzanti}";
                 var klasorYolu = Path.Combine(_env.WebRootPath, "uploads", "portfolio");
-                Directory.CreateDirectory(klasorYolu);
+
+                if (!Directory.Exists(klasorYolu))
+                {
+                    Directory.CreateDirectory(klasorYolu);
+                }
 
                 var tamYol = Path.Combine(klasorYolu, dosyaAdi);
+
+                // Kopyalama işlemi asenkron yapıldı
                 using (var stream = new FileStream(tamYol, FileMode.Create))
                 {
-                    ImageFile.CopyTo(stream);
+                    await ImageFile.CopyToAsync(stream);
                 }
 
                 model.ImageURL = $"/uploads/portfolio/{dosyaAdi}";
             }
 
             _context.Portfolios.Add(model);
-            _context.SaveChanges();
+            // Veritabanı kaydı asenkron yapıldı
+            await _context.SaveChangesAsync();
+
             return RedirectToAction("Index");
         }
 
         [HttpPost]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             var portfolio = _context.Portfolios.FirstOrDefault(p => p.PortfolioId == id);
             if (portfolio != null)
@@ -82,11 +94,13 @@ namespace WebApplication4.Controllers
                 {
                     var dosyaYolu = Path.Combine(_env.WebRootPath, portfolio.ImageURL.TrimStart('/'));
                     if (System.IO.File.Exists(dosyaYolu))
+                    {
                         System.IO.File.Delete(dosyaYolu);
+                    }
                 }
 
                 _context.Portfolios.Remove(portfolio);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
             return RedirectToAction("Index");
         }
