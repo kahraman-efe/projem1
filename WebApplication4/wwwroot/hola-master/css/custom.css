@@ -17,7 +17,8 @@
     --radius: 10px;
 }
 
-html { scroll-behavior: smooth; }
+/* Not: html { scroll-behavior: smooth } kullanılmamalı; main.js zaten jQuery ile
+   kaydırıyor ve ikisi birlikte menü tıklamalarını yavaşlatıyor. */
 
 .sr-only {
     position: absolute !important;
@@ -205,7 +206,6 @@ textarea:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
     *, *::before, *::after { transition: none !important; animation: none !important; }
 }
 

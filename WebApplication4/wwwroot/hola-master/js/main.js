@@ -1,4 +1,4 @@
-/* ===================================================================
+﻿/* ===================================================================
  * Hola - Main JS
  *
  * ------------------------------------------------------------------- */
@@ -8,7 +8,7 @@
     "use strict";
 
     var cfg = {
-        scrollDuration: 800, // smoothscroll duration
+        scrollDuration: 550, // smoothscroll duration
         mailChimpURL: ''   // mailchimp url
     },
 
@@ -303,13 +303,20 @@
             var target = this.hash,
                 $target = $(target);
 
+            // Hedef bölüm sayfada yoksa normal davranışa bırak
+            if (!target || !$target.length) return;
+
             e.preventDefault();
             e.stopPropagation();
 
+            var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top
-            }, cfg.scrollDuration, 'swing', function () {
-                window.location.hash = target;
+            }, reduce ? 0 : cfg.scrollDuration, 'swing', function () {
+                // location.hash yerine replaceState: sona gelince sayfa zıplamaz
+                if (history.replaceState) history.replaceState(null, '', target);
+                else window.location.hash = target;
             });
 
         });
