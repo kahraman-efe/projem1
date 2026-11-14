@@ -1,21 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApplication4.DAL.Context;
+using WebApplication4.DAL.Entities;
 
 namespace WebApplication4.ViewComponents
 {
-    public class TestimonialComponent : ViewComponent
+    public class TestimonialComponent : SafeViewComponent
     {
-        private readonly MyPortfolioContext _context;
-
-        public TestimonialComponent(MyPortfolioContext context)
-        {
-            _context = context;
-        }
+        public TestimonialComponent(MyPortfolioContext context) : base(context) { }
 
         public IViewComponentResult Invoke()
         {
-            var testimonials = _context.Testimonials.ToList();
-            return View(testimonials);
+            var items = Safe(db => db.Testimonials.ToList(), new List<Testimonial>());
+            return View(items);
         }
     }
 }

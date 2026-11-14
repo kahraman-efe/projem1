@@ -1,21 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApplication4.DAL.Context;
+using WebApplication4.DAL.Entities;
 
 namespace WebApplication4.ViewComponents
 {
-    public class EducationComponent : ViewComponent
+    public class EducationComponent : SafeViewComponent
     {
-        private readonly MyPortfolioContext _context;
-
-        public EducationComponent(MyPortfolioContext context)
-        {
-            _context = context;
-        }
+        public EducationComponent(MyPortfolioContext context) : base(context) { }
 
         public IViewComponentResult Invoke()
         {
-            var educations = _context.Educations.ToList();
-            return View(educations);
+            var items = Safe(db => db.Educations.ToList(), new List<Education>());
+            return View(items);
         }
     }
 }

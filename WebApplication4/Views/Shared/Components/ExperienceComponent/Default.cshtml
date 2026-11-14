@@ -1,53 +1,32 @@
 ﻿@model List<WebApplication4.DAL.Entities.Experience>
+@if (Model != null && Model.Count > 0)
+{
+    <div class="row about-content about-content--timeline">
 
-<div class="row about-content about-content--timeline">
+        <div class="col-full text-center">
+            <h3>Deneyimlerim</h3>
+        </div>
 
-    <div class="col-full text-center">
-        <h3>Eğitim Bilgilerim</h3>
+        @for (int side = 0; side < 2; side++)
+        {
+            <div class="col-six tab-full @(side == 0 ? "left" : "right")">
+                <div class="timeline">
+                    @for (int i = side; i < Model.Count; i += 2)
+                    {
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">@Model[i].Date</p>
+                                <h3>@Model[i].Head</h3>
+                                <h5>@Model[i].Title</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>@Model[i].Description</p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
     </div>
-
-    <div class="col-six tab-full left">
-        <div class="timeline">
-            @for (int i = 0; i < Model.Count; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <p class="timeline__timeframe">@Model[i].Date</p>
-                            <h3>@Model[i].Head</h3>
-                            <h5>@Model[i].Title</h5>
-                        </div>
-                        <div class="timeline__desc">
-                            <p>@Model[i].Description</p>
-                        </div>
-                    </div> <!-- end timeline__block -->
-                }
-            }
-        </div> <!-- end timeline -->
-    </div> <!-- end left -->
-
-    <div class="col-six tab-full right">
-        <div class="timeline">
-            @for (int i = 0; i < Model.Count; i++)
-            {
-                if (i % 2 != 0)
-                {
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <p class="timeline__timeframe">@Model[i].Date</p>
-                            <h3>@Model[i].Head</h3>
-                            <h5>@Model[i].Title</h5>
-                        </div>
-                        <div class="timeline__desc">
-                            <p>@Model[i].Description</p>
-                        </div>
-                    </div> <!-- end timeline__block -->
-                }
-            }
-        </div> <!-- end timeline -->
-    </div> <!-- end right -->
-
-</div>
+}

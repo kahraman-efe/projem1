@@ -1,21 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApplication4.DAL.Context;
+using WebApplication4.DAL.Entities;
 
 namespace WebApplication4.ViewComponents
 {
-    public class ContactComponent : ViewComponent
+    public class ContactComponent : SafeViewComponent
     {
-        private readonly MyPortfolioContext _context;
-
-        public ContactComponent(MyPortfolioContext context)
-        {
-            _context = context;
-        }
+        public ContactComponent(MyPortfolioContext context) : base(context) { }
 
         public IViewComponentResult Invoke()
         {
-            var contact = _context.Contacts.FirstOrDefault();
-            return View(contact);
+            var item = Safe(db => db.Contacts.FirstOrDefault(), null);
+            return View(item);
         }
     }
 }

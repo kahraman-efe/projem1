@@ -1,21 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApplication4.DAL.Context;
+using WebApplication4.DAL.Entities;
 
 namespace WebApplication4.ViewComponents
 {
-    public class ExperienceComponent : ViewComponent
+    public class ExperienceComponent : SafeViewComponent
     {
-        private readonly MyPortfolioContext _context;
-
-        public ExperienceComponent(MyPortfolioContext context)
-        {
-            _context = context;
-        }
+        public ExperienceComponent(MyPortfolioContext context) : base(context) { }
 
         public IViewComponentResult Invoke()
         {
-            var experiences = _context.Experiences.ToList();
-            return View(experiences);
+            var items = Safe(db => db.Experiences.ToList(), new List<Experience>());
+            return View(items);
         }
     }
 }

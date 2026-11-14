@@ -1,7 +1,58 @@
-﻿@model List<WebApplication4.DAL.Entities.Portfolio>
+﻿@using WebApplication4.DAL.Entities
+@model List<Portfolio>
 @{
-    var bitenler = Model.Where(p => p.Status == WebApplication4.DAL.Entities.ProjectStatus.Tamamlandi).ToList();
-    var gelisenler = Model.Where(p => p.Status == WebApplication4.DAL.Entities.ProjectStatus.Gelisiyor).ToList();
+    var items = Model ?? new List<Portfolio>();
+    var bitenler = items.Where(p => p.Status == ProjectStatus.Tamamlandi).ToList();
+    var gelisenler = items.Where(p => p.Status == ProjectStatus.Gelisiyor).ToList();
+
+    void RenderGroup(string heading, List<Portfolio> group, bool inProgress)
+    {
+        <div class="row narrow works-group__title">
+            <div class="col-full">
+                <h3>@heading <span class="works-group__count">@group.Count</span></h3>
+            </div>
+        </div>
+        <div class="row masonry-wrap">
+            <div class="masonry">
+                @foreach (var item in group)
+                {
+                    var image = string.IsNullOrWhiteSpace(item.ImageURL) ? "/hola-master/images/foto1.png" : item.ImageURL;
+                    var hasLink = !string.IsNullOrWhiteSpace(item.URL);
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+                            <span class="folio-badge @(inProgress ? "folio-badge--progress" : "folio-badge--done")">
+                                @(inProgress ? "Geliştiriliyor" : "Tamamlandı")
+                            </span>
+
+                            <div class="item-folio__thumb">
+                                <a href="@image" class="thumb-link" title="@item.Title" data-size="1050x700">
+                                    <img src="@image" alt="@item.Title" loading="lazy">
+                                    <span class="shadow-overlay"></span>
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">@item.Title</h3>
+                                <p class="item-folio__cat">@item.Subtitle</p>
+                            </div>
+
+                            @if (hasLink)
+                            {
+                                <a href="@item.URL" class="item-folio__project-link" title="Projeye git" target="_blank" rel="noopener">
+                                    <i class="im im-link" aria-hidden="true"></i>
+                                    <span class="sr-only">@item.Title projesine git</span>
+                                </a>
+                            }
+
+                            <div class="item-folio__caption">
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
 }
 
 <section id="works" class="s-works target-section">
@@ -10,98 +61,27 @@
         <div class="col-full">
             <h3>Portfolyo</h3>
             <h2>Son Projelerim</h2>
-            <p class="lead">Aşağıda üzerinde çalıştığım bazı projeleri bulabilirsiniz.</p>
+            <p class="lead">Üzerinde çalıştığım ve tamamladığım projelerden bazıları.</p>
         </div>
     </div>
 
-    @if (bitenler.Any())
+    @if (!items.Any())
     {
-        <div class="row narrow section-intro">
-            <div class="col-full">
-                <h3>Tamamlanan Projeler</h3>
+        <div class="row narrow">
+            <div class="col-full text-center works-empty">
+                <p>Projeler çok yakında burada olacak.</p>
             </div>
         </div>
-        <div class="row masonry-wrap">
-            <div class="masonry">
-                @foreach (var item in bitenler)
-                {
-                    <div class="masonry__brick">
-                        <div class="item-folio">
+    }
 
-                            <div class="item-folio__thumb">
-                                <a href="@item.ImageURL" class="thumb-link" title="@item.Title" data-size="1050x700">
-                                    <img src="@item.ImageURL" alt="@item.Title">
-                                    <span class="shadow-overlay"></span>
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    @item.Title
-                                </h3>
-                                <p class="item-folio__cat">
-                                    @item.Subtitle
-                                </p>
-                            </div>
-
-                            <a href="@item.URL" class="item-folio__project-link" title="Project link">
-                                <i class="im im-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>@item.Description</p>
-                            </div>
-
-                        </div> <!-- end item-folio -->
-                    </div> <!-- end masonry__brick -->
-                }
-            </div>
-        </div> <!-- end masonry -->
+    @if (bitenler.Any())
+    {
+        RenderGroup("Tamamlanan Projeler", bitenler, false);
     }
 
     @if (gelisenler.Any())
     {
-        <div class="row narrow section-intro">
-            <div class="col-full">
-                <h3>Gelişmekte Olan Projeler</h3>
-            </div>
-        </div>
-        <div class="row masonry-wrap">
-            <div class="masonry">
-                @foreach (var item in gelisenler)
-                {
-                    <div class="masonry__brick">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="@item.ImageURL" class="thumb-link" title="@item.Title" data-size="1050x700">
-                                    <img src="@item.ImageURL" alt="@item.Title">
-                                    <span class="shadow-overlay"></span>
-                                </a>
-                            </div>
-
-                            <div class="item-folio__text">
-                                <h3 class="item-folio__title">
-                                    @item.Title
-                                </h3>
-                                <p class="item-folio__cat">
-                                    @item.Subtitle
-                                </p>
-                            </div>
-
-                            <a href="@item.URL" class="item-folio__project-link" title="Project link">
-                                <i class="im im-link"></i>
-                            </a>
-
-                            <div class="item-folio__caption">
-                                <p>@item.Description</p>
-                            </div>
-
-                        </div> <!-- end item-folio -->
-                    </div> <!-- end masonry__brick -->
-                }
-            </div>
-        </div> <!-- end masonry -->
+        RenderGroup("Geliştirmekte Olduğum Projeler", gelisenler, true);
     }
 
 </section>

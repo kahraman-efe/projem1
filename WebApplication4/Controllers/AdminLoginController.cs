@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
@@ -45,6 +46,7 @@ namespace WebApplication4.Controllers
         }
 
         [HttpPost]
+        [EnableRateLimiting("login")]
         public IActionResult Setup(string username, string password, string confirmPassword)
         {
             if (_context.Admins.Any())
@@ -80,6 +82,7 @@ namespace WebApplication4.Controllers
         }
 
         [HttpPost]
+        [EnableRateLimiting("login")]
         public async Task<IActionResult> Login(string username, string password)
         {
             var admin = _context.Admins.FirstOrDefault(a => a.Username == username);

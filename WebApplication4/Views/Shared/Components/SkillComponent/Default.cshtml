@@ -1,20 +1,34 @@
 ﻿@model List<WebApplication4.DAL.Entities.Skill>
 
 <div class="col-six tab-full right">
-	<h3>Bildiğim Programlama Dilleri && Frameworklar</h3>
-	<ul class="skill-bars">
-		@foreach (var item in Model)
-		{
-			<li>
-				<div class="progress percent@(item.Value)" style="width:@(item.Value)%"><span>@(item.Value)%</span></div>
-				<strong><i class="@GetSkillIcon(item.Title)"></i> @item.Title</strong>
-			</li>
-		}
-	</ul>
+	<h3>Teknolojiler &amp; Yetenekler</h3>
+	@if (Model == null || Model.Count == 0)
+	{
+		<p>Yetenek listesi yakında eklenecek.</p>
+	}
+	else
+	{
+		<ul class="skill-bars">
+			@foreach (var item in Model)
+			{
+				var percent = ClampPercent(item.Value);
+				<li>
+					<div class="progress" style="width:@(percent)%" role="progressbar" aria-valuenow="@percent" aria-valuemin="0" aria-valuemax="100" aria-label="@item.Title"><span>@(percent)%</span></div>
+					<strong lang="en"><i class="@GetSkillIcon(item.Title)" aria-hidden="true"></i> @item.Title</strong>
+				</li>
+			}
+		</ul>
+	}
 </div>
 
 @functions {
-	string GetSkillIcon(string title)
+	int ClampPercent(string? value)
+	{
+		var digits = new string((value ?? "").Where(char.IsDigit).ToArray());
+		return int.TryParse(digits, out var n) ? Math.Clamp(n, 0, 100) : 0;
+	}
+
+	string GetSkillIcon(string? title)
 	{
 		return title?.Trim().ToLower() switch
 		{

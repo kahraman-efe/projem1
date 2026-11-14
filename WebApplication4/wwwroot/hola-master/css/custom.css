@@ -1,0 +1,215 @@
+/* ===================================================================
+ * Kahraman Efe portföy — tema üzerine özel iyileştirmeler
+ * main.css'ten SONRA yüklenir.
+ * ------------------------------------------------------------------- */
+
+:root {
+    --accent: #862121;
+    --accent-strong: #a32a2a;
+    --ink: #0D0A0B;
+    --muted: #6c6c6c;
+    --card-bg: #f6f5f4;
+    --card-border: #e6e3e1;
+    --ok-bg: #e8f5ec;
+    --ok-ink: #1d6b37;
+    --err-bg: #fbeaea;
+    --err-ink: #8f1f1f;
+    --radius: 10px;
+}
+
+html { scroll-behavior: smooth; }
+
+.sr-only {
+    position: absolute !important;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0, 0, 0, 0);
+    white-space: nowrap; border: 0;
+}
+
+/* Klavye ile gezinirken görünür odak */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* ---------- Bildirim kutuları ---------- */
+.form-alert {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.4rem 1.8rem;
+    margin-bottom: 2.4rem;
+    border-radius: var(--radius);
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    animation: alertIn .35s ease-out;
+}
+.form-alert .im { font-size: 2rem; flex-shrink: 0; }
+.form-alert--success { background: var(--ok-bg); color: var(--ok-ink); }
+.form-alert--error   { background: var(--err-bg); color: var(--err-ink); }
+
+@keyframes alertIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: none; }
+}
+
+/* ---------- Hakkımda: CV + hızlı mesaj kartları ---------- */
+.about-content--buttons { align-items: stretch; }
+.about-content--buttons > [class*="col-"] { display: flex; }
+
+.about-card {
+    width: 100%;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: 3rem 3rem 2.4rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow .25s ease, transform .25s ease;
+}
+.about-card:hover {
+    box-shadow: 0 14px 30px rgba(13, 10, 11, .08);
+    transform: translateY(-2px);
+}
+.about-card__title {
+    margin: 0 0 1.2rem;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: var(--ink);
+}
+.about-card p { color: var(--muted); margin-bottom: 2.4rem; }
+.about-card .btn { margin-top: auto; margin-bottom: 0; }
+.about-card .btn .im,
+.quick-form .btn .im { margin-right: .6rem; vertical-align: -2px; }
+
+.quick-form input,
+.quick-form textarea {
+    background: #fff;
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 1.4rem;
+    min-height: auto;
+    transition: border-color .2s ease;
+}
+.quick-form textarea { height: 10rem; resize: vertical; }
+.quick-form input:focus,
+.quick-form textarea:focus { border-color: var(--accent); }
+.quick-form .btn {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: #fff;
+}
+.quick-form .btn:hover,
+.quick-form .btn:focus { background: var(--accent); border-color: var(--accent); }
+
+/* ---------- Yetenek çubukları ---------- */
+.skill-bars li,
+.skill-bars li .progress { border-radius: 999px; }
+.skill-bars li { background: #e4e1df; }
+.skill-bars li .progress {
+    background-image: linear-gradient(to right, var(--ink), var(--accent));
+    transition: width 1s ease;
+}
+.skill-bars li .progress span { border-radius: 4px; background: var(--ink); }
+.skill-bars li strong i { font-size: 1.8rem; vertical-align: -3px; margin-right: .4rem; }
+
+/* ---------- Eğitim kartları ---------- */
+.about-content--education { margin-top: 3rem; }
+.about-content--education h3 { margin-bottom: 3.6rem; }
+.edu-card {
+    position: relative;
+    background: var(--card-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 2.2rem 2.4rem;
+    margin-bottom: 2.4rem;
+}
+.edu-card h5 { margin: .4rem 0 .6rem; font-size: 1.7rem; }
+.edu-card p  { margin: 0; color: var(--muted); }
+.edu-card__date {
+    display: inline-block;
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+/* ---------- Projeler ---------- */
+.works-group__title { margin-top: 4.8rem; margin-bottom: 2.4rem; text-align: center; }
+.works-group__title h3 {
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    color: var(--ink);
+}
+.works-group__count {
+    display: inline-block;
+    min-width: 2.6rem;
+    padding: .2rem .8rem;
+    margin-left: .6rem;
+    border-radius: 999px;
+    background: var(--ink);
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    vertical-align: 2px;
+}
+.works-empty p { color: var(--muted); font-size: 1.7rem; }
+
+.item-folio { position: relative; }
+.folio-badge {
+    position: absolute;
+    top: 1.4rem;
+    left: 1.4rem;
+    z-index: 3;
+    padding: .4rem 1.1rem;
+    border-radius: 999px;
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: .12rem;
+    text-transform: uppercase;
+    color: #fff;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+}
+.folio-badge--done     { background: rgba(29, 107, 55, .9); }
+.folio-badge--progress { background: rgba(134, 33, 33, .92); }
+
+.item-folio__thumb img { transition: transform .5s ease; }
+.item-folio:hover .item-folio__thumb img { transform: scale(1.04); }
+.item-folio__thumb { overflow: hidden; }
+
+/* ---------- İletişim ---------- */
+.contact__form .form-alert--success { background: rgba(232, 245, 236, .95); }
+.contact__form .form-alert--error   { background: rgba(251, 234, 234, .95); }
+.contact__infos a { color: inherit; border-bottom: 1px solid rgba(255, 255, 255, .3); }
+.contact__infos a:hover { color: #fff; border-bottom-color: #fff; }
+
+/* ---------- İstatistik ---------- */
+.stats__col { transition: transform .25s ease; }
+.stats__col:hover { transform: translateY(-3px); }
+
+/* ---------- Mobil ---------- */
+@media only screen and (max-width: 600px) {
+    .about-card { padding: 2.4rem 2rem 2rem; }
+    .form-alert { font-size: 1.4rem; padding: 1.2rem 1.4rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+/* İletişim başlığı koyu zeminde okunur olsun (tema yalnızca h1'i beyaz yapıyordu) */
+.s-contact .section-intro h2 { color: #FFFFFF; }
+.s-contact .section-intro h3 { color: #c5c5c5; }
+.s-contact .section-intro .lead { color: rgba(255, 255, 255, .7); }

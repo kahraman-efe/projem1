@@ -1,21 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApplication4.DAL.Context;
+using WebApplication4.DAL.Entities;
 
 namespace WebApplication4.ViewComponents
 {
-    public class PortfolioComponent : ViewComponent
+    public class PortfolioComponent : SafeViewComponent
     {
-        private readonly MyPortfolioContext _context;
-
-        public PortfolioComponent(MyPortfolioContext context)
-        {
-            _context = context;
-        }
+        public PortfolioComponent(MyPortfolioContext context) : base(context) { }
 
         public IViewComponentResult Invoke()
         {
-            var portfolios = _context.Portfolios.ToList();
-            return View(portfolios);
+            var items = Safe(db => db.Portfolios.ToList(), new List<Portfolio>());
+            return View(items);
         }
     }
 }

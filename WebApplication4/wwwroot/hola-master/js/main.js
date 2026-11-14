@@ -341,6 +341,20 @@
         /* local validation */
         $('#contactForm').validate({
 
+            messages: {
+                contactName: {
+                    required: "Lütfen adınızı yazın.",
+                    minlength: "Adınız en az 2 karakter olmalı."
+                },
+                contactEmail: {
+                    required: "Lütfen e-posta adresinizi yazın.",
+                    email: "Geçerli bir e-posta adresi girin."
+                },
+                contactMessage: {
+                    required: "Lütfen mesajınızı yazın."
+                }
+            },
+
             /* normal submit to the ASP.NET Contact/SendMessage action */
             submitHandler: function (form) {
 

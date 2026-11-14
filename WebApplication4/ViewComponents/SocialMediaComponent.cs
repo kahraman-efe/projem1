@@ -1,21 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApplication4.DAL.Context;
+using WebApplication4.DAL.Entities;
 
 namespace WebApplication4.ViewComponents
 {
-    public class SocialMediaComponent : ViewComponent
+    public class SocialMediaComponent : SafeViewComponent
     {
-        private readonly MyPortfolioContext _context;
-
-        public SocialMediaComponent(MyPortfolioContext context)
-        {
-            _context = context;
-        }
+        public SocialMediaComponent(MyPortfolioContext context) : base(context) { }
 
         public IViewComponentResult Invoke()
         {
-            var socialMedias = _context.SocialMedias.ToList();
-            return View(socialMedias);
+            var items = Safe(db => db.SocialMedias.ToList(), new List<SocialMedia>());
+            return View(items);
         }
     }
 }

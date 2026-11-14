@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using WebApplication4.DAL.Context;
 using WebApplication4.DAL.Entities;
 
@@ -8,10 +9,12 @@ namespace WebApplication4.Controllers
     public class ContactController : Controller
     {
         private readonly MyPortfolioContext _context;
+        private readonly ILogger<ContactController> _logger;
 
-        public ContactController(MyPortfolioContext context)
+        public ContactController(MyPortfolioContext context, ILogger<ContactController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         [Authorize]
@@ -57,55 +60,68 @@ namespace WebApplication4.Controllers
         // bu yüzden global CSRF token zorunluluğundan hariç tutuluyor.
         [HttpPost]
         [IgnoreAntiforgeryToken]
-        public IActionResult SendMessage(string contactName, string contactSubject, string contactEmail, string contactMessage)
+        [EnableRateLimiting("contact")]
+        public IActionResult SendMessage(string? contactName, string? contactSubject, string? contactEmail, string? contactMessage)
         {
             var message = new Message
             {
-                NameSurname = contactName,
-                Subject = contactSubject,
-                Email = contactEmail,
-                MessageDetail = contactMessage,
+                NameSurname = contactName?.Trim() ?? "",
+                Subject = string.IsNullOrWhiteSpace(contactSubject) ? "(Konu yok)" : contactSubject.Trim(),
+                Email = contactEmail?.Trim() ?? "",
+                MessageDetail = contactMessage?.Trim() ?? "",
                 SendDate = DateTime.UtcNow,
                 IsRead = false
             };
 
-            // Parametreler ayrı ayrı bağlandığı (model binding) için Message entity'sinin
-            // [Required]/[EmailAddress] gibi kurallarını burada elle tetikliyoruz.
-            if (!TryValidateModel(message))
-            {
-                TempData["ContactSuccess"] = false;
-                return Redirect("/Default/Index#contact");
-            }
-
-            _context.Messages.Add(message);
-            _context.SaveChanges();
-            TempData["ContactSuccess"] = true;
-            return Redirect("/Default/Index#contact");
+            TempData["ContactSuccess"] = TrySave(message);
+            return Redirect("/#contact");
         }
 
-        // Bu action da anonim ziyaretçiler tarafından kullanılır.
+        // Bu action da anonim ziyaretçiler tarafından kullanılır (Hakkımda bölümündeki hızlı form).
         [HttpPost]
         [IgnoreAntiforgeryToken]
-        public IActionResult SendQuickMessage(string contactEmail, string contactMessage)
+        [EnableRateLimiting("contact")]
+        public IActionResult SendQuickMessage(string? contactEmail, string? contactMessage)
         {
             var message = new Message
             {
                 NameSurname = "Bilinmiyor",
-                Subject = "Hızlı Mesaj (About formu)",
-                Email = contactEmail,
-                MessageDetail = contactMessage,
+                Subject = "Hızlı Mesaj (Hakkımda formu)",
+                Email = contactEmail?.Trim() ?? "",
+                MessageDetail = contactMessage?.Trim() ?? "",
                 SendDate = DateTime.UtcNow,
                 IsRead = false
             };
 
+            TempData["QuickSuccess"] = TrySave(message);
+            return Redirect("/#about");
+        }
+
+        // Parametreler ayrı ayrı bağlandığı için Message entity'sinin [Required]/[EmailAddress]
+        // kurallarını elle tetikliyoruz. Veritabanı hatası olursa ziyaretçiye 500 sayfası yerine
+        // "gönderilemedi" mesajı gösterilir.
+        private bool TrySave(Message message)
+        {
+            // Nullable açıkken string parametreler otomatik "zorunlu" sayılır; isteğe bağlı
+            // Konu alanı boş geldiğinde tüm doğrulama düşüyordu. Parametre hatalarını temizleyip
+            // yalnızca Message entity'sinin kurallarına göre doğruluyoruz.
+            ModelState.Clear();
             if (!TryValidateModel(message))
             {
-                return Redirect("/Default/Index#about");
+                return false;
             }
 
-            _context.Messages.Add(message);
-            _context.SaveChanges();
-            return Redirect("/Default/Index#about");
+            try
+            {
+                _context.Messages.Add(message);
+                _context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "İletişim mesajı kaydedilemedi.");
+                return false;
+            }
         }
     }
 }

@@ -1,27 +1,30 @@
-﻿ @model List<WebApplication4.DAL.Entities.Testimonial>
-
-<div id="testimonials" class="s-testimonials">
-    <div class="overlay"></div>
-    <div class="row testimonials-header">
-        <div class="col-full">
-            <h2 class="h02">İnsanlar benim için ne dediler?</h2>
+﻿@model List<WebApplication4.DAL.Entities.Testimonial>
+@if (Model != null && Model.Count > 0)
+{
+    <div id="testimonials" class="s-testimonials">
+        <div class="overlay"></div>
+        <div class="row testimonials-header">
+            <div class="col-full">
+                <h2 class="h02">İnsanlar benim için ne dedi?</h2>
+            </div>
+        </div>
+        <div class="row testimonials">
+            <div class="col-full testimonials__slider">
+                @foreach (var item in Model)
+                {
+                    <div class="testimonials__slide">
+                        @if (!string.IsNullOrWhiteSpace(item.ImageUrl))
+                        {
+                            <img src="@item.ImageUrl" alt="@item.NameSurname" class="testimonials__avatar" loading="lazy">
+                        }
+                        <p>@item.Description</p>
+                        <div class="testimonials__author h06">
+                            @item.NameSurname
+                            <span>@item.Title</span>
+                        </div>
+                    </div>
+                }
+            </div>
         </div>
     </div>
-    <div class="row testimonials">
-        <div class="col-full testimonials__slider">
-            @foreach (var item in Model)
-            {
-                <div class="testimonials__slide">
-                    <img src="@item.ImageUrl" alt="Author image" class="testimonials__avatar">
-                    <p>
-                        @item.Description
-                    </p>
-                    <div class="testimonials__author h06">
-                        @item.NameSurname
-                        <span>@item.Title</span>
-                    </div>
-                </div>
-            }
-        </div> <!-- end testimonials__slider -->
-    </div> <!-- end testimonials -->
-</div>
+}
