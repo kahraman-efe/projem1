@@ -1,0 +1,169 @@
+@{
+    Layout = null;
+    string? email = ViewBag.Email as string;
+    var updated = new DateTime(2026, 11, 14);
+}
+<!DOCTYPE html>
+<html class="no-js" lang="tr">
+
+@await Component.InvokeAsync("HeadComponent", new
+{
+    title = "KVKK Aydınlatma Metni ve Gizlilik | Kahraman Efe",
+    description = "Kahraman Efe Erden kişisel web sitesi KVKK aydınlatma metni, gizlilik ve çerez politikası.",
+    path = "/kvkk"
+})
+
+<body id="top">
+
+    <header class="s-header legal-header">
+        <div class="header-logo">
+            <a class="site-logo" href="/"><img src="~/hola-master/images/erdenlogo1.jpg" alt="Kahraman Efe"></a>
+        </div>
+        <a class="legal-back" href="/">&larr; Ana sayfaya dön</a>
+    </header>
+
+    <main class="s-legal">
+        <div class="row narrow">
+            <div class="col-full">
+
+                <p class="legal-eyebrow">Yasal Bilgilendirme</p>
+                <h1 class="legal-title">KVKK Aydınlatma Metni, Gizlilik ve Çerez Politikası</h1>
+                <p class="legal-updated">Son güncelleme: @updated.ToString("d MMMM yyyy", new System.Globalization.CultureInfo("tr-TR"))</p>
+
+                <nav class="legal-toc" aria-label="İçindekiler">
+                    <a href="#sorumlu">1. Veri sorumlusu</a>
+                    <a href="#veriler">2. İşlenen veriler</a>
+                    <a href="#amac">3. Amaç ve hukuki sebep</a>
+                    <a href="#aktarim">4. Aktarım ve saklama yeri</a>
+                    <a href="#sure">5. Saklama süresi</a>
+                    <a href="#haklar">6. Haklarınız</a>
+                    <a href="#cerez">7. Çerezler</a>
+                    <a href="#guvenlik">8. Güvenlik</a>
+                </nav>
+
+                <p>
+                    Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) 10. maddesi uyarınca,
+                    <strong>kahramanefe.com.tr</strong> internet sitesini ziyaret eden ve sitedeki formlar aracılığıyla
+                    iletişime geçen kişileri, kişisel verilerinin nasıl işlendiği konusunda bilgilendirmek amacıyla hazırlanmıştır.
+                </p>
+
+                <section id="sorumlu" class="legal-section">
+                    <h2>1. Veri sorumlusu</h2>
+                    <p>
+                        Kişisel verileriniz, veri sorumlusu sıfatıyla <strong>Kahraman Efe Erden</strong> (“Erden Yazılım”) tarafından işlenmektedir.
+                        @if (email != null)
+                        {
+                            <text>İletişim: <a href="mailto:@email">@email</a></text>
+                        }
+                        else
+                        {
+                            <text>İletişim bilgilerine ana sayfadaki <a href="/#contact">İletişim</a> bölümünden ulaşabilirsiniz.</text>
+                        }
+                    </p>
+                </section>
+
+                <section id="veriler" class="legal-section">
+                    <h2>2. İşlenen kişisel veriler</h2>
+                    <ul>
+                        <li><strong>İletişim formu:</strong> adınız, e-posta adresiniz, (isteğe bağlı) mesaj konusu ve mesaj içeriğiniz ile mesajın gönderildiği tarih ve saat.</li>
+                        <li><strong>Hızlı mesaj formu:</strong> e-posta adresiniz ve mesaj içeriğiniz.</li>
+                        <li><strong>Teknik veriler:</strong> siteyi ziyaret ettiğinizde IP adresiniz, tarayıcı bilgileriniz ve erişim zamanı; barındırma sağlayıcısının sunucu kayıtlarında ve kötüye kullanımı (spam, kaba kuvvet denemeleri) önlemek amacıyla geçici olarak işlenir.</li>
+                    </ul>
+                    <p>Formlarda özel nitelikli kişisel veri (sağlık, din, etnik köken vb.) istenmez; lütfen mesajlarınızda bu tür bilgiler paylaşmayın.</p>
+                </section>
+
+                <section id="amac" class="legal-section">
+                    <h2>3. İşleme amaçları ve hukuki sebepler</h2>
+                    <ul>
+                        <li>Mesajınızı almak, yanıtlamak ve talep ettiğiniz hizmetle ilgili teklif hazırlamak — KVKK m.5/2(c): bir sözleşmenin kurulmasıyla doğrudan ilgili olması.</li>
+                        <li>Sitenin güvenli ve kesintisiz çalışması, spam ve kötüye kullanımın önlenmesi — KVKK m.5/2(f): veri sorumlusunun meşru menfaati.</li>
+                        <li>Yasal yükümlülüklerin yerine getirilmesi ve olası uyuşmazlıklarda hakların korunması — KVKK m.5/2(ç) ve (e).</li>
+                    </ul>
+                    <p>Verileriniz pazarlama listelerine eklenmez, satılmaz ve reklam amacıyla kullanılmaz.</p>
+                </section>
+
+                <section id="aktarim" class="legal-section">
+                    <h2>4. Aktarım ve verilerin saklandığı yer</h2>
+                    <p>
+                        Site ve veritabanı, yurt dışında sunucuları bulunan bulut hizmet sağlayıcıları üzerinde barındırılmaktadır.
+                        Bu nedenle kişisel verileriniz, yalnızca hizmetin teknik olarak sunulabilmesi amacıyla aşağıdaki sağlayıcılara aktarılmaktadır:
+                    </p>
+                    <ul>
+                        <li><strong>Render</strong> — web sitesinin barındırılması (yurt dışı).</li>
+                        <li><strong>Supabase</strong> — form mesajlarının saklandığı veritabanı (Japonya bölgesi).</li>
+                        <li><strong>Cloudflare ve jsDelivr</strong> — sitenin hızlı ve güvenli sunulması için içerik dağıtım ağı (IP adresiniz bu hizmetler tarafından görülebilir).</li>
+                    </ul>
+                    <p>Verileriniz, yasal zorunluluk hâlleri dışında üçüncü kişilerle paylaşılmaz. Yetkili kamu kurumlarının talebi hâlinde mevzuat çerçevesinde aktarım yapılabilir.</p>
+                </section>
+
+                <section id="sure" class="legal-section">
+                    <h2>5. Saklama süresi</h2>
+                    <p>
+                        İletişim mesajları, talebiniz sonuçlandıktan sonra <strong>en fazla 2 yıl</strong> saklanır ve bu sürenin sonunda silinir.
+                        Dilediğiniz zaman aşağıdaki başvuru yoluyla mesajlarınızın daha önce silinmesini talep edebilirsiniz.
+                        Teknik kayıtlar, barındırma sağlayıcısının kendi süreleri boyunca tutulur.
+                    </p>
+                </section>
+
+                <section id="haklar" class="legal-section">
+                    <h2>6. KVKK 11. madde kapsamındaki haklarınız</h2>
+                    <p>Veri sorumlusuna başvurarak;</p>
+                    <ul>
+                        <li>kişisel verilerinizin işlenip işlenmediğini öğrenme ve işlenmişse bilgi talep etme,</li>
+                        <li>işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
+                        <li>yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme,</li>
+                        <li>eksik veya yanlış işlenmişse düzeltilmesini isteme,</li>
+                        <li>KVKK 7. madde çerçevesinde silinmesini veya yok edilmesini isteme,</li>
+                        <li>düzeltme ve silme işlemlerinin, verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
+                        <li>münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhinize bir sonuç doğmasına itiraz etme,</li>
+                        <li>kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>
+                    </ul>
+                    <p>
+                        haklarına sahipsiniz. Başvurularınızı
+                        @if (email != null)
+                        {
+                            <a href="mailto:@email?subject=KVKK%20Ba%C5%9Fvurusu">@email</a>
+                        }
+                        else
+                        {
+                            <text>sitedeki iletişim e-postası</text>
+                        }
+                        adresine “KVKK Başvurusu” konulu e-posta ile iletebilirsiniz. Başvurunuz en geç <strong>30 gün</strong> içinde ücretsiz olarak sonuçlandırılır.
+                    </p>
+                </section>
+
+                <section id="cerez" class="legal-section">
+                    <h2>7. Çerez politikası</h2>
+                    <p>Bu sitede <strong>reklam, analiz veya takip çerezi kullanılmaz.</strong> Yalnızca sitenin çalışması için zorunlu olan çerezler kullanılır:</p>
+                    <div class="legal-table">
+                        <table>
+                            <thead>
+                                <tr><th>Çerez</th><th>Amaç</th><th>Süre</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>.AspNetCore.Antiforgery.*</td><td>Formların sahte isteklere karşı korunması</td><td>Oturum</td></tr>
+                                <tr><td>.AspNetCore.Mvc.CookieTempDataProvider</td><td>Form gönderildikten sonra “mesajınız iletildi” bilgisinin gösterilmesi</td><td>Oturum</td></tr>
+                                <tr><td>.AspNetCore.Cookies</td><td>Yalnızca site yöneticisinin yönetim paneline giriş oturumu</td><td>Oturum</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Zorunlu çerezler, KVKK m.5/2(f) kapsamında sitenin işleyişi için kullanılır ve açık rızaya tabi değildir. Tarayıcı ayarlarınızdan çerezleri silebilir veya engelleyebilirsiniz; bu durumda formlar çalışmayabilir.</p>
+                </section>
+
+                <section id="guvenlik" class="legal-section">
+                    <h2>8. Güvenlik</h2>
+                    <p>
+                        Site HTTPS (SSL) ile şifrelenir; formlar sahte isteklere ve spam saldırılarına karşı korunur; veritabanına yalnızca
+                        yetkili yönetici erişebilir. Kişisel verilerinizin güvenliği için KVKK 12. madde kapsamında makul teknik ve idari tedbirler alınmaktadır.
+                    </p>
+                </section>
+
+                <p class="legal-foot">Bu metin, mevzuattaki ve sitedeki değişikliklere göre güncellenebilir. Güncel sürüm her zaman bu sayfada yayımlanır.</p>
+            </div>
+        </div>
+    </main>
+
+    @await Component.InvokeAsync("FooterComponent")
+
+</body>
+</html>

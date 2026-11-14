@@ -347,3 +347,101 @@ textarea:focus-visible {
     .services-cta__box { flex-direction: column; text-align: center; padding: 2.6rem 2rem; }
     .services-cta__btn { width: 100%; }
 }
+
+/* ===================================================================
+ * KVKK — form notları ve yasal metin sayfası
+ * ------------------------------------------------------------------- */
+.form-legal {
+    margin: 1.6rem 0 0;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, .55);
+}
+.form-legal a { color: rgba(255, 255, 255, .85); text-decoration: underline; text-underline-offset: 2px; }
+.form-legal a:hover { color: #fff; }
+.form-legal--light { color: var(--muted); margin-top: 1.2rem; margin-bottom: 0; }
+.form-legal--light a { color: var(--ink); }
+.form-legal--light a:hover { color: var(--accent); }
+
+.legal-header {
+    position: fixed;
+    background: #0D0A0B;
+}
+.legal-back {
+    position: absolute;
+    right: 6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+}
+.legal-back:hover { color: #3b9cff; }
+
+.s-legal {
+    padding: 16rem 0 10rem;
+    background: #fff;
+    color: #3a3a3a;
+}
+.s-legal .row.narrow { max-width: 860px; }
+.legal-eyebrow {
+    margin: 0 0 1rem;
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+.legal-title { margin: 0 0 1rem; font-size: clamp(2.8rem, 4vw, 4.2rem); line-height: 1.2; color: var(--ink); }
+.legal-updated { color: var(--muted); font-size: 1.4rem; margin-bottom: 3.6rem; }
+
+.legal-toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    border-radius: 12px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+}
+.legal-toc a {
+    padding: .6rem 1.2rem;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid var(--card-border);
+    color: var(--ink);
+    font-size: 1.3rem;
+    line-height: 1.4;
+    transition: border-color .2s, color .2s;
+}
+.legal-toc a:hover { border-color: var(--accent); color: var(--accent); }
+
+.legal-section { padding-top: 2rem; scroll-margin-top: 9rem; }
+.legal-section h2 {
+    margin: 2rem 0 1.4rem;
+    padding-left: 1.4rem;
+    border-left: 4px solid var(--accent);
+    font-size: 2.2rem;
+    color: var(--ink);
+}
+.s-legal p, .s-legal li { font-size: 1.6rem; line-height: 1.8; }
+.s-legal ul { margin-left: 2rem; }
+.s-legal li { margin-bottom: .8rem; }
+.s-legal a { color: var(--accent); }
+
+.legal-table { overflow-x: auto; margin: 2rem 0; border: 1px solid var(--card-border); border-radius: 10px; }
+.legal-table table { width: 100%; margin: 0; border-collapse: collapse; }
+.legal-table th, .legal-table td { padding: 1.2rem 1.6rem; text-align: left; font-size: 1.4rem; border-bottom: 1px solid var(--card-border); }
+.legal-table th { background: var(--card-bg); color: var(--ink); }
+.legal-table tr:last-child td { border-bottom: 0; }
+.legal-table td:first-child { font-family: monospace; font-size: 1.3rem; white-space: nowrap; }
+
+.legal-foot { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--card-border); color: var(--muted); font-size: 1.4rem !important; }
+
+@media only screen and (max-width: 800px) {
+    .legal-back { right: 2rem; font-size: 1.1rem; }
+    .s-legal { padding-top: 12rem; }
+}

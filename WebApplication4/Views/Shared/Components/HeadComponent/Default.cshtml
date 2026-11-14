@@ -4,8 +4,8 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Kahraman Efe | Yazılım Geliştirici</title>
-    <meta name="description" content="Kahraman Efe'nin kişisel portföy sitesi. Yazılım geliştirici olarak projeler, deneyimler ve iletişim bilgileri.">
+    <title>@ViewData["HeadTitle"]</title>
+    <meta name="description" content="@ViewData["HeadDescription"]">
     <meta name="author" content="Kahraman Efe">
 
     <!-- mobile specific metas
@@ -15,9 +15,9 @@
     <!-- Open Graph / sosyal medya paylaşım
     ================================================== -->
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="Kahraman Efe | Yazılım Geliştirici">
-    <meta property="og:description" content="Kahraman Efe'nin kişisel portföy sitesi. Yazılım geliştirici olarak projeler, deneyimler ve iletişim bilgileri.">
-    <meta property="og:url" content="https://kahramanefe.com.tr">
+    <meta property="og:title" content="@ViewData["HeadTitle"]">
+    <meta property="og:description" content="@ViewData["HeadDescription"]">
+    <meta property="og:url" content="@ViewData["HeadUrl"]">
     <meta property="og:locale" content="tr_TR">
     <meta name="twitter:card" content="summary">
 
@@ -40,7 +40,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/hola-master/apple-touch-icon.png">
     <link rel="manifest" href="/hola-master/site.webmanifest">
 
-    <link rel="canonical" href="https://kahramanefe.com.tr">
+    <link rel="canonical" href="@ViewData["HeadUrl"]">
 
     <script type="application/ld+json">
         {
