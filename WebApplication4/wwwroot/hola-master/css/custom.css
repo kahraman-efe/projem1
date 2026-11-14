@@ -213,3 +213,137 @@ textarea:focus-visible {
 .s-contact .section-intro h2 { color: #FFFFFF; }
 .s-contact .section-intro h3 { color: #c5c5c5; }
 .s-contact .section-intro .lead { color: rgba(255, 255, 255, .7); }
+
+/* ===================================================================
+ * Hizmetler (Erden Yazılım) — logo renkleri: çelik gri + elektrik mavisi
+ * ------------------------------------------------------------------- */
+.s-services {
+    --svc-blue: #3b9cff;
+    --svc-blue-soft: rgba(59, 156, 255, .14);
+    position: relative;
+    overflow: hidden;
+    padding: 15rem 0 14rem;
+    background:
+        radial-gradient(60rem 40rem at 50% 32rem, rgba(59, 156, 255, .16), transparent 70%),
+        linear-gradient(180deg, #1b1e25 0%, #2a2e37 100%);
+    color: #c9d1dc;
+}
+.s-services::before { /* hafif altıgen/ızgara dokusu */
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .03) 1px, transparent 1px);
+    background-size: 48px 48px;
+    pointer-events: none;
+}
+.s-services .row { position: relative; }
+.s-services .section-intro { text-align: center; }
+.s-services .section-intro h3 { color: var(--svc-blue); }
+.s-services .section-intro h2 { color: #fff; }
+.s-services .section-intro .lead { color: rgba(220, 228, 240, .7); }
+
+.services-logo { margin: 1rem auto 5rem; text-align: center; }
+.services-logo__frame {
+    display: inline-block;
+    margin: 0;
+    padding: 8px;
+    border-radius: 28px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, .14), rgba(59, 156, 255, .25));
+    box-shadow: 0 30px 80px -25px rgba(59, 156, 255, .55), 0 0 0 1px rgba(255, 255, 255, .06);
+    animation: svcFloat 6s ease-in-out infinite;
+}
+.services-logo__frame img {
+    display: block;
+    width: 260px;
+    max-width: 62vw;
+    height: auto;
+    border-radius: 22px;
+}
+@keyframes svcFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+}
+.services-grid::before, .services-grid::after { display: none; } /* tema clearfix'i grid'i bozmasın */
+
+.service-card {
+    padding: 3.2rem 2.8rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, .04);
+    border: 1px solid rgba(255, 255, 255, .08);
+    transition: transform .3s ease, border-color .3s ease, background .3s ease, box-shadow .3s ease;
+}
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(59, 156, 255, .5);
+    background: rgba(59, 156, 255, .07);
+    box-shadow: 0 24px 50px -24px rgba(59, 156, 255, .6);
+}
+.service-card__icon {
+    width: 5.6rem; height: 5.6rem;
+    display: grid; place-items: center;
+    margin-bottom: 2rem;
+    border-radius: 14px;
+    color: var(--svc-blue);
+    background: var(--svc-blue-soft);
+    box-shadow: inset 0 0 0 1px rgba(59, 156, 255, .25);
+}
+.service-card__icon svg { width: 2.8rem; height: 2.8rem; }
+.service-card__title {
+    margin: 0 0 1rem;
+    color: #fff;
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+}
+.service-card__text { margin: 0; font-size: 1.5rem; line-height: 1.7; color: rgba(214, 222, 234, .72); }
+
+.services-cta { margin-top: 5rem; }
+.services-cta__box {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 2.6rem 3rem;
+    border-radius: 18px;
+    background: linear-gradient(120deg, rgba(59, 156, 255, .18), rgba(255, 255, 255, .04));
+    border: 1px solid rgba(59, 156, 255, .35);
+}
+.services-cta__seal {
+    flex-shrink: 0;
+    width: 6rem; height: 6rem;
+    display: grid; place-items: center;
+    border-radius: 50%;
+    color: #fff;
+    background: linear-gradient(145deg, #3b9cff, #1d5fd1);
+    box-shadow: 0 12px 30px -10px rgba(59, 156, 255, .8);
+}
+.services-cta__seal svg { width: 3rem; height: 3rem; }
+.services-cta__text { flex: 1; }
+.services-cta__text strong { display: block; color: #fff; font-family: "montserrat-bold", sans-serif; font-size: 1.9rem; margin-bottom: .4rem; }
+.services-cta__text span { color: rgba(214, 222, 234, .75); font-size: 1.5rem; }
+.s-services .services-cta__btn {
+    margin: 0;
+    flex-shrink: 0;
+    background: linear-gradient(145deg, #3b9cff, #1d5fd1);
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 12px 30px -12px rgba(59, 156, 255, .9);
+}
+.s-services .services-cta__btn:hover,
+.s-services .services-cta__btn:focus { background: #fff; color: #1d5fd1; border-color: #fff; }
+
+@media only screen and (max-width: 1000px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media only screen and (max-width: 640px) {
+    .s-services { padding: 10rem 0; }
+    .services-grid { grid-template-columns: 1fr; gap: 1.6rem; }
+    .services-cta__box { flex-direction: column; text-align: center; padding: 2.6rem 2rem; }
+    .services-cta__btn { width: 100%; }
+}

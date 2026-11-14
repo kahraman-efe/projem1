@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Erden Yazılım Posteri</title>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 1080px; height: 1350px; background: #16191f; }
+
+    .poster {
+        position: relative;
+        width: 1080px;
+        height: 1350px;
+        overflow: hidden;
+        font-family: "Inter", "Segoe UI", sans-serif;
+        color: #dfe6f0;
+        background:
+            radial-gradient(760px 560px at 540px 520px, rgba(59, 156, 255, .30), transparent 70%),
+            radial-gradient(500px 400px at 1080px 0, rgba(59, 156, 255, .14), transparent 70%),
+            linear-gradient(180deg, #14171d 0%, #22262e 55%, #2b3039 100%);
+    }
+    /* ızgara dokusu */
+    .poster::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+            linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+        background-size: 54px 54px;
+        -webkit-mask-image: radial-gradient(ellipse at 50% 40%, #000 35%, transparent 80%);
+                mask-image: radial-gradient(ellipse at 50% 40%, #000 35%, transparent 80%);
+    }
+    /* devre çizgileri */
+    .circuit { position: absolute; inset: 0; opacity: .5; }
+
+    .top {
+        position: relative;
+        text-align: center;
+        padding-top: 84px;
+    }
+    .eyebrow {
+        display: inline-block;
+        padding: 10px 26px;
+        border-radius: 999px;
+        border: 1px solid rgba(59,156,255,.5);
+        background: rgba(59,156,255,.1);
+        color: #8cc6ff;
+        font: 600 20px/1 "Inter", sans-serif;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+    h1 {
+        margin-top: 26px;
+        font: 800 66px/1.05 "Exo 2", sans-serif;
+        letter-spacing: -.5px;
+        color: #fff;
+    }
+    h1 span {
+        background: linear-gradient(90deg, #6fb8ff, #3b9cff 50%, #b9dcff);
+        -webkit-background-clip: text;
+                background-clip: text;
+        color: transparent;
+    }
+
+    .logo {
+        position: relative;
+        width: 390px;
+        margin: 48px auto 0;
+        padding: 9px;
+        border-radius: 34px;
+        background: linear-gradient(145deg, rgba(255,255,255,.22), rgba(59,156,255,.45));
+        box-shadow: 0 40px 90px -25px rgba(59,156,255,.8), 0 0 0 1px rgba(255,255,255,.08);
+    }
+    .logo img { display: block; width: 100%; border-radius: 26px; }
+
+    .services {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        width: 940px;
+        margin: 60px auto 0;
+    }
+    .svc {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 20px 18px;
+        border-radius: 18px;
+        background: rgba(255,255,255,.05);
+        border: 1px solid rgba(255,255,255,.1);
+    }
+    .svc i {
+        flex-shrink: 0;
+        width: 52px; height: 52px;
+        display: grid; place-items: center;
+        border-radius: 14px;
+        color: #5aaeff;
+        background: rgba(59,156,255,.14);
+        box-shadow: inset 0 0 0 1px rgba(59,156,255,.3);
+    }
+    .svc svg { width: 28px; height: 28px; }
+    .svc b { font: 700 21px/1.2 "Exo 2", sans-serif; color: #fff; }
+
+    .tags {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        margin-top: 40px;
+        font: 500 21px/1 "Inter", sans-serif;
+        color: #b9c4d3;
+    }
+    .tags span::before { content: "✓"; color: #3b9cff; margin-right: 8px; font-weight: 700; }
+    .tags span + span { padding-left: 14px; border-left: 1px solid rgba(255,255,255,.18); }
+
+    .bottom {
+        position: absolute;
+        left: 70px; right: 70px; bottom: 60px;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        padding: 26px 30px;
+        border-radius: 24px;
+        background: linear-gradient(120deg, rgba(59,156,255,.28), rgba(255,255,255,.05));
+        border: 1px solid rgba(59,156,255,.45);
+    }
+    .seal {
+        flex-shrink: 0;
+        width: 80px; height: 80px;
+        display: grid; place-items: center;
+        border-radius: 50%;
+        color: #fff;
+        background: linear-gradient(145deg, #3b9cff, #1d5fd1);
+        box-shadow: 0 14px 34px -10px rgba(59,156,255,.9);
+    }
+    .seal svg { width: 40px; height: 40px; }
+    .guarantee { flex: 1; }
+    .guarantee strong { display: block; font: 800 34px/1.1 "Exo 2", sans-serif; color: #fff; }
+    .guarantee span { font-size: 20px; color: #c3cedd; }
+    .contact { text-align: right; font: 600 22px/1.5 "Inter", sans-serif; color: #fff; white-space: nowrap; }
+    .contact small { display: block; font-weight: 500; font-size: 18px; color: #8cc6ff; }
+</style>
+</head>
+<body>
+<div class="poster">
+    <svg class="circuit" viewBox="0 0 1080 1350" fill="none" stroke="#3b9cff" stroke-width="2" stroke-opacity=".35" aria-hidden="true">
+        <path d="M0 330h120l40 40h90"/><circle cx="254" cy="370" r="5" fill="#3b9cff"/>
+        <path d="M1080 300H960l-40 40h-90"/><circle cx="826" cy="340" r="5" fill="#3b9cff"/>
+        <path d="M0 640h70l30-30h80"/><circle cx="184" cy="610" r="5" fill="#3b9cff"/>
+        <path d="M1080 660h-80l-30-30h-70"/><circle cx="896" cy="630" r="5" fill="#3b9cff"/>
+    </svg>
+
+    <div class="top">
+        <div class="eyebrow">İşletmelere Özel</div>
+        <h1>Markanızı dijitale<br><span>güvenle taşıyoruz</span></h1>
+    </div>
+
+    <div class="logo"><img src="../WebApplication4/wwwroot/hola-master/images/erdenlogo1.jpg" alt="Erden Yazılım"></div>
+
+    <div class="services">
+        <div class="svc"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></i><b>Kurumsal<br>Web Sitesi</b></div>
+        <div class="svc"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.6 7.6"/><circle cx="11" cy="11" r="2"/></svg></i><b>Logo &amp;<br>Kurumsal Kimlik</b></div>
+        <div class="svc"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg></i><b>Yapay Zeka<br>Çözümleri</b></div>
+        <div class="svc"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></i><b>Domain</b></div>
+        <div class="svc"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></i><b>Hosting</b></div>
+        <div class="svc"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></i><b>Poster &amp;<br>Sosyal Medya</b></div>
+    </div>
+
+    <div class="tags"><span>Mobil uyumlu</span><span>SSL güvenli</span><span>Sürekli destek</span></div>
+
+    <div class="bottom">
+        <div class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div class="guarantee">
+            <strong>Erden güvencesiyle</strong>
+            <span>Kurulumdan bakıma tek muhatap</span>
+        </div>
+        <div class="contact">
+            0538 086 44 28
+            <small>kahramanefe.com.tr</small>
+        </div>
+    </div>
+</div>
+</body>
+</html>

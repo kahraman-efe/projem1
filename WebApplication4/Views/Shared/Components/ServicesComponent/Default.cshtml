@@ -1,0 +1,64 @@
+@{
+    // (başlık, açıklama, SVG ikon içeriği)
+    var services = new (string Title, string Text, string Icon)[]
+    {
+        ("Kurumsal Web Sitesi", "İşletmenize özel, mobil uyumlu, hızlı ve Google dostu web siteleri.",
+            "<rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M8 21h8M12 17v4\"/>"),
+        ("Logo & Kurumsal Kimlik", "Markanızı akılda kalıcı kılan logo, renk ve kurumsal kimlik tasarımı.",
+            "<path d=\"M12 19l7-7 3 3-7 7-3-3z\"/><path d=\"M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z\"/><path d=\"M2 2l7.6 7.6\"/><circle cx=\"11\" cy=\"11\" r=\"2\"/>"),
+        ("Domain", "Markanıza en uygun alan adının seçimi, kaydı ve yönetimi.",
+            "<circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20\"/>"),
+        ("Hosting", "SSL sertifikalı, hızlı ve güvenli barındırma; düzenli yedekleme.",
+            "<rect x=\"2\" y=\"2\" width=\"20\" height=\"8\" rx=\"2\"/><rect x=\"2\" y=\"14\" width=\"20\" height=\"8\" rx=\"2\"/><path d=\"M6 6h.01M6 18h.01\"/>"),
+        ("Yapay Zeka Çözümleri", "Sohbet botları, otomasyonlar ve işinizi hızlandıran akıllı asistanlar.",
+            "<rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\"/><rect x=\"9\" y=\"9\" width=\"6\" height=\"6\"/><path d=\"M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3\"/>"),
+        ("Poster & Sosyal Medya", "Kampanya posterleri ve sosyal medya için dikkat çekici görseller.",
+            "<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><circle cx=\"8.5\" cy=\"8.5\" r=\"1.5\"/><path d=\"M21 15l-5-5L5 21\"/>"),
+    };
+}
+
+<section id="services" class="s-services target-section">
+    <div class="row narrow section-intro">
+        <div class="col-full">
+            <h3>Hizmetler</h3>
+            <h2>İşletmenize özel dijital çözümler</h2>
+            <p class="lead">Kurumsal siteden yapay zekaya, markanızın dijitaldeki her adımında yanınızdayız.</p>
+        </div>
+    </div>
+
+    <div class="row services-logo">
+        <div class="col-full">
+            <figure class="services-logo__frame">
+                <img src="~/hola-master/images/erdenlogo1.jpg" alt="Erden Yazılım logosu" width="260" height="270" loading="lazy">
+            </figure>
+        </div>
+    </div>
+
+    <div class="row services-grid">
+        @foreach (var s in services)
+        {
+            <article class="service-card">
+                <div class="service-card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">@Html.Raw(s.Icon)</svg>
+                </div>
+                <h4 class="service-card__title">@s.Title</h4>
+                <p class="service-card__text">@s.Text</p>
+            </article>
+        }
+    </div>
+
+    <div class="row services-cta">
+        <div class="col-full">
+            <div class="services-cta__box">
+                <div class="services-cta__seal" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <div class="services-cta__text">
+                    <strong>Erden Yazılım güvencesiyle</strong>
+                    <span>Kurulumdan bakıma kadar tek muhatap, şeffaf fiyat ve sürekli destek.</span>
+                </div>
+                <a href="#contact" class="smoothscroll btn btn--primary services-cta__btn">Teklif Alın</a>
+            </div>
+        </div>
+    </div>
+</section>
