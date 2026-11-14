@@ -1,24 +1,52 @@
 ﻿@model List<WebApplication4.DAL.Entities.Message>
 @{
     Layout = "_AdminLayout";
+    ViewData["Title"] = "Mesajlar";
+    var newIds = ViewBag.NewIds as HashSet<int> ?? new HashSet<int>();
 }
-<h1>Gelen Mesajlar</h1>
-<table>
-    <tr>
-        <th>Ad Soyad</th>
-        <th>Email</th>
-        <th>Konu</th>
-        <th>Mesaj</th>
-        <th>Tarih</th>
-    </tr>
-    @foreach (var msg in Model)
-    {
-        <tr>
-            <td>@msg.NameSurname</td>
-            <td>@msg.Email</td>
-            <td>@msg.Subject</td>
-            <td>@msg.MessageDetail</td>
-            <td>@msg.SendDate.ToString("dd.MM.yyyy HH:mm")</td>
-        </tr>
-    }
-</table>
+
+<div class="top-bar">
+    <h1>Gelen Mesajlar</h1>
+    <div>
+        <span class="pill pill--new">@newIds.Count yeni</span>
+        <span class="pill" style="background:var(--surface-2);color:var(--text-dim)">@Model.Count toplam</span>
+    </div>
+</div>
+
+@if (Model.Count == 0)
+{
+    <div class="empty-state"><i class="bi bi-envelope-open"></i>Henüz hiç mesaj gelmedi. Sitedeki iletişim formundan gelen mesajlar burada görünecek.</div>
+}
+else
+{
+    <div class="msg-list">
+        @foreach (var msg in Model)
+        {
+            var isNew = newIds.Contains(msg.MessageID);
+            var subject = string.IsNullOrWhiteSpace(msg.Subject) ? "(Konu yok)" : msg.Subject;
+            <article class="msg @(isNew ? "msg--new" : "")">
+                <div class="avatar">@(string.IsNullOrEmpty(msg.NameSurname) ? "?" : msg.NameSurname.Substring(0, 1))</div>
+                <div class="msg__body">
+                    <div class="msg__head">
+                        <span class="msg__name">@msg.NameSurname</span>
+                        <a class="msg__mail" href="mailto:@msg.Email">@msg.Email</a>
+                        @if (isNew)
+                        {
+                            <span class="pill pill--new">Yeni</span>
+                        }
+                        <span class="msg__date"><i class="bi bi-clock"></i> @msg.SendDate.ToLocalTime().ToString("dd.MM.yyyy HH:mm")</span>
+                    </div>
+                    <div class="msg__subject">@subject</div>
+                    <div class="msg__text">@msg.MessageDetail</div>
+                    <div class="msg__actions">
+                        <a class="btn btn--sm" href="mailto:@msg.Email?subject=@Uri.EscapeDataString("Re: " + subject)"><i class="bi bi-reply"></i> Yanıtla</a>
+                        <form method="post" action="/Message/Delete/@msg.MessageID" class="delete-form" onsubmit="return confirm('Bu mesajı silmek istediğine emin misin?')">
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="delete-link">Sil</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        }
+    </div>
+}

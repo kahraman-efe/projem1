@@ -1,0 +1,189 @@
+/* Admin giriş / kurulum ekranları */
+:root {
+    --bg: #090b16;
+    --text: #e8eaf6;
+    --text-dim: #9aa0bd;
+    --text-faint: #6b7192;
+    --border: rgba(255, 255, 255, .1);
+    --grad: linear-gradient(135deg, #ff4d6d, #8b5cf6);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px 16px;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    overflow-x: hidden;
+}
+
+.aurora { position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
+.aurora span {
+    position: absolute;
+    width: 520px; height: 520px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: .4;
+    animation: drift 18s ease-in-out infinite alternate;
+}
+.aurora span:nth-child(1) { background: #ff4d6d; top: -160px; left: -120px; }
+.aurora span:nth-child(2) { background: #8b5cf6; bottom: -180px; right: -120px; animation-delay: -6s; }
+.aurora span:nth-child(3) { background: #22d3ee; top: 40%; left: 55%; width: 300px; height: 300px; opacity: .18; animation-delay: -12s; }
+@keyframes drift {
+    from { transform: translate(0, 0) scale(1); }
+    to   { transform: translate(60px, 40px) scale(1.15); }
+}
+
+/* Hafif ızgara deseni */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+    pointer-events: none;
+}
+
+.card {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 410px;
+    padding: 38px 34px 32px;
+    border-radius: 24px;
+    background: rgba(17, 20, 38, .72);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    box-shadow: 0 30px 80px -20px rgba(0, 0, 0, .8);
+    animation: rise .6s cubic-bezier(.2, .8, .2, 1) both;
+}
+/* Kartın etrafında dönen ışıklı kenar */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: conic-gradient(from var(--angle, 0deg), transparent 0 70%, #ff4d6d, #8b5cf6, transparent);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: spin 6s linear infinite;
+    pointer-events: none;
+}
+@property --angle { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+@keyframes spin { to { --angle: 360deg; } }
+@keyframes rise { from { opacity: 0; transform: translateY(16px) scale(.98); } to { opacity: 1; transform: none; } }
+
+.logo {
+    width: 58px; height: 58px;
+    margin: 0 auto 18px;
+    border-radius: 18px;
+    display: grid; place-items: center;
+    background: var(--grad);
+    box-shadow: 0 16px 40px -10px rgba(255, 77, 109, .8);
+    font-size: 24px;
+    color: #fff;
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -.4px;
+    background: linear-gradient(90deg, #fff, #c9c4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.sub { text-align: center; color: var(--text-dim); font-size: 14px; margin: 6px 0 26px; line-height: 1.5; }
+
+.error {
+    display: flex; align-items: center; gap: 8px;
+    padding: 11px 14px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(244, 63, 94, .4);
+    background: rgba(244, 63, 94, .12);
+    color: #ffb4c0;
+    font-size: 13.5px;
+    animation: shake .4s ease;
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    75% { transform: translateX(6px); }
+}
+
+.field { margin-bottom: 16px; }
+.field label { display: block; font-size: 12.5px; font-weight: 600; color: var(--text-dim); margin-bottom: 7px; }
+.input-wrap { position: relative; }
+.input-wrap > i {
+    position: absolute;
+    left: 14px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-faint);
+    pointer-events: none;
+    transition: color .2s;
+}
+.input-wrap input {
+    width: 100%;
+    padding: 13px 44px 13px 42px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, .14);
+    background: rgba(0, 0, 0, .3);
+    color: var(--text);
+    font: inherit;
+    font-size: 14.5px;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+.input-wrap input::placeholder { color: var(--text-faint); }
+.input-wrap input:focus { border-color: #8b5cf6; box-shadow: 0 0 0 4px rgba(139, 92, 246, .22); }
+.input-wrap:focus-within > i { color: #c4b5fd; }
+.toggle-pass {
+    position: absolute;
+    right: 8px; top: 50%;
+    transform: translateY(-50%);
+    width: 32px; height: 32px;
+    border: 0; border-radius: 8px;
+    background: transparent;
+    color: var(--text-faint);
+    cursor: pointer;
+}
+.toggle-pass:hover { color: var(--text); background: rgba(255, 255, 255, .06); }
+
+.btn-login {
+    width: 100%;
+    margin-top: 8px;
+    padding: 14px;
+    border: 0;
+    border-radius: 12px;
+    background: var(--grad);
+    background-size: 200% 200%;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 16px 34px -12px rgba(255, 77, 109, .85);
+    transition: transform .2s, box-shadow .2s, background-position .5s;
+}
+.btn-login:hover { transform: translateY(-2px); background-position: 100% 0; box-shadow: 0 20px 40px -12px rgba(139, 92, 246, .9); }
+.btn-login:active { transform: none; }
+
+.foot { margin-top: 22px; text-align: center; font-size: 13px; }
+.foot a { color: var(--text-dim); text-decoration: none; }
+.foot a:hover { color: var(--text); }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+}

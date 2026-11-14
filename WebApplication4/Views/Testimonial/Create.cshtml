@@ -1,7 +1,9 @@
 ﻿@model WebApplication4.DAL.Entities.Testimonial
 @{
     Layout = "_AdminLayout";
+    ViewData["Title"] = "Yeni Referans";
 }
+<a href="/Testimonial/Index" class="btn btn--ghost btn--sm" style="margin-bottom:16px"><i class="bi bi-arrow-left"></i> Listeye dön</a>
 <h1>Yeni Referans Ekle</h1>
 <div class="form-box">
     <form method="post" action="/Testimonial/Create">

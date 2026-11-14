@@ -1,5 +1,131 @@
-﻿@{
+﻿@model WebApplication4.Controllers.DashboardViewModel
+@{
     Layout = "_AdminLayout";
+    ViewData["Title"] = "Dashboard";
+    var hour = DateTime.Now.Hour;
+    var greeting = hour < 6 ? "İyi geceler" : hour < 12 ? "Günaydın" : hour < 18 ? "İyi günler" : "İyi akşamlar";
+    var name = User.Identity?.Name ?? "Admin";
 }
-<h1>Admin Paneline Hoş Geldin</h1>
-<p>Buradan siteni yönetebilirsin.</p>
+
+@if (Model.DatabaseError)
+{
+    <div class="alert"><i class="bi bi-exclamation-triangle"></i> Veritabanına ulaşılamadı; istatistikler şu an gösterilemiyor.</div>
+}
+
+<section class="hero">
+    <div class="hero__emoji" aria-hidden="true">🚀</div>
+    <h1>@greeting, @name 👋</h1>
+    <p>
+        Portföyün emrinde. Bugün
+        @if (Model.UnreadMessages > 0)
+        {
+            <strong>@Model.UnreadMessages okunmamış mesajın</strong> <text>var.</text>
+        }
+        else
+        {
+            <text>okunmamış mesajın yok — her şey yolunda.</text>
+        }
+    </p>
+    <div class="hero__actions">
+        <a href="/Portfolio/Create" class="btn"><i class="bi bi-plus-lg"></i> Yeni Proje</a>
+        <a href="/Message/Index" class="btn btn--ghost"><i class="bi bi-envelope"></i> Mesajlar</a>
+        <a href="/" target="_blank" rel="noopener" class="btn btn--ghost"><i class="bi bi-eye"></i> Siteyi Gör</a>
+    </div>
+</section>
+
+<div class="stats">
+    <a class="stat" href="/Portfolio/Index" style="--c:#ff4d6d">
+        <div class="stat__icon"><i class="bi bi-kanban"></i></div>
+        <div class="stat__value" data-count="@Model.Projects">@Model.Projects</div>
+        <div class="stat__label">Proje · @Model.ProjectsInProgress geliştiriliyor</div>
+    </a>
+    <a class="stat" href="/Message/Index" style="--c:#8b5cf6">
+        <div class="stat__icon"><i class="bi bi-envelope-paper-heart"></i></div>
+        <div class="stat__value" data-count="@Model.Messages">@Model.Messages</div>
+        <div class="stat__label">Mesaj · @Model.UnreadMessages yeni</div>
+    </a>
+    <a class="stat" href="/Skill/Index" style="--c:#22d3ee">
+        <div class="stat__icon"><i class="bi bi-lightning-charge"></i></div>
+        <div class="stat__value" data-count="@Model.Skills">@Model.Skills</div>
+        <div class="stat__label">Yetenek</div>
+    </a>
+    <a class="stat" href="/Testimonial/Index" style="--c:#fbbf24">
+        <div class="stat__icon"><i class="bi bi-chat-quote"></i></div>
+        <div class="stat__value" data-count="@Model.Testimonials">@Model.Testimonials</div>
+        <div class="stat__label">Referans</div>
+    </a>
+    <a class="stat" href="/Education/Index" style="--c:#34d399">
+        <div class="stat__icon"><i class="bi bi-mortarboard"></i></div>
+        <div class="stat__value" data-count="@Model.Educations">@Model.Educations</div>
+        <div class="stat__label">Eğitim</div>
+    </a>
+    <a class="stat" href="/SocialMedia/Index" style="--c:#60a5fa">
+        <div class="stat__icon"><i class="bi bi-share"></i></div>
+        <div class="stat__value" data-count="@Model.SocialMedias">@Model.SocialMedias</div>
+        <div class="stat__label">Sosyal Medya</div>
+    </a>
+</div>
+
+<div class="grid-2">
+    <section class="panel">
+        <div class="panel__head">
+            <h2><i class="bi bi-inbox"></i> Son Mesajlar</h2>
+            <a href="/Message/Index">Tümünü gör <i class="bi bi-arrow-right"></i></a>
+        </div>
+        @if (Model.LatestMessages.Count == 0)
+        {
+            <div class="empty-state"><i class="bi bi-envelope-open"></i>Henüz mesaj yok.</div>
+        }
+        else
+        {
+            <div class="msg-list msg-compact">
+                @foreach (var m in Model.LatestMessages)
+                {
+                    <div class="msg @(m.IsRead ? "" : "msg--new")">
+                        <div class="avatar">@(string.IsNullOrEmpty(m.NameSurname) ? "?" : m.NameSurname.Substring(0, 1))</div>
+                        <div class="msg__body">
+                            <div class="msg__head">
+                                <span class="msg__name">@m.NameSurname</span>
+                                @if (!m.IsRead)
+                                {
+                                    <span class="pill pill--new">Yeni</span>
+                                }
+                                <span class="msg__date">@m.SendDate.ToLocalTime().ToString("dd MMM, HH:mm")</span>
+                            </div>
+                            <div class="msg__text">@m.MessageDetail</div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </section>
+
+    <section class="panel">
+        <div class="panel__head"><h2><i class="bi bi-lightning"></i> Hızlı İşlemler</h2></div>
+        <div class="quick">
+            <a href="/Portfolio/Create"><i class="bi bi-kanban"></i> Proje ekle</a>
+            <a href="/Skill/Create"><i class="bi bi-lightning-charge"></i> Yetenek ekle</a>
+            <a href="/Education/Create"><i class="bi bi-mortarboard"></i> Eğitim ekle</a>
+            <a href="/Testimonial/Create"><i class="bi bi-chat-quote"></i> Referans ekle</a>
+            <a href="/About/Index"><i class="bi bi-person-badge"></i> Hakkımda'yı düzenle</a>
+            <a href="/Contact/Index"><i class="bi bi-geo-alt"></i> İletişimi düzenle</a>
+        </div>
+    </section>
+</div>
+
+@section Scripts {
+    <script>
+        // Sayılar 0'dan yukarı sayarak gelsin
+        document.querySelectorAll('[data-count]').forEach(function (el) {
+            var target = parseInt(el.dataset.count, 10) || 0;
+            if (target === 0 || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            var start = performance.now(), dur = 900;
+            el.textContent = '0';
+            (function step(now) {
+                var p = Math.min((now - start) / dur, 1);
+                el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+                if (p < 1) requestAnimationFrame(step);
+            })(start);
+        });
+    </script>
+}

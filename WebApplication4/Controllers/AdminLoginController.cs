@@ -85,7 +85,16 @@ namespace WebApplication4.Controllers
         [EnableRateLimiting("login")]
         public async Task<IActionResult> Login(string username, string password)
         {
-            var admin = _context.Admins.FirstOrDefault(a => a.Username == username);
+            Admin? admin;
+            try
+            {
+                admin = _context.Admins.FirstOrDefault(a => a.Username == username);
+            }
+            catch (Exception)
+            {
+                ViewBag.Error = "Veritabanına şu an ulaşılamıyor. Lütfen daha sonra tekrar deneyin.";
+                return View();
+            }
 
             if (admin == null || !VerifyPassword(admin, password))
             {

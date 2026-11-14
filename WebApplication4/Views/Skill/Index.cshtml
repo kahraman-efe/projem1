@@ -1,10 +1,11 @@
 ﻿@model List<WebApplication4.DAL.Entities.Skill>
 @{
     Layout = "_AdminLayout";
+    ViewData["Title"] = "Yetenekler";
 }
 <div class="top-bar">
     <h1>Yetenekler</h1>
-    <a href="/Skill/Create" class="btn">+ Yeni Yetenek Ekle</a>
+    <a href="/Skill/Create" class="btn"><i class="bi bi-plus-lg"></i> Yeni Yetenek Ekle</a>
 </div>
 <table>
     <tr>
@@ -16,7 +17,11 @@
     {
         <tr>
             <td>@item.Title</td>
-            <td>@item.Value</td>
+            <td>
+                @{ int.TryParse(new string((item.Value ?? "").Where(char.IsDigit).ToArray()), out var pct); pct = Math.Clamp(pct, 0, 100); }
+                <div class="skill-meter"><span style="width:@(pct)%"></span></div>
+                <small style="color:var(--text-dim)">@(pct)%</small>
+            </td>
             <td>
                 <form method="post" action="/Skill/Delete/@item.SkillId" onsubmit="return confirm('Silmek istediğine emin misin?')" class="delete-form">
                     @Html.AntiForgeryToken()

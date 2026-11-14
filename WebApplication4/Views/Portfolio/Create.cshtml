@@ -1,7 +1,9 @@
 ﻿@model WebApplication4.DAL.Entities.Portfolio
 @{
     Layout = "_AdminLayout";
+    ViewData["Title"] = "Yeni Proje";
 }
+<a href="/Portfolio/Index" class="btn btn--ghost btn--sm" style="margin-bottom:16px"><i class="bi bi-arrow-left"></i> Listeye dön</a>
 <h1>Yeni Proje Ekle</h1>
 <div class="form-box">
     <form method="post" action="/Portfolio/Create" enctype="multipart/form-data">

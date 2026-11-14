@@ -1,7 +1,9 @@
 ﻿@model WebApplication4.DAL.Entities.Education
 @{
     Layout = "_AdminLayout";
+    ViewData["Title"] = "Yeni Eğitim";
 }
+<a href="/Education/Index" class="btn btn--ghost btn--sm" style="margin-bottom:16px"><i class="bi bi-arrow-left"></i> Listeye dön</a>
 <h1>Yeni Eğitim Ekle</h1>
 <div class="form-box">
     <form method="post" action="/Education/Create">

@@ -1,7 +1,9 @@
 ﻿@model WebApplication4.DAL.Entities.Feature
 @{
     Layout = "_AdminLayout";
+    ViewData["Title"] = "Yeni Başlık";
 }
+<a href="/Feature/Index" class="btn btn--ghost btn--sm" style="margin-bottom:16px"><i class="bi bi-arrow-left"></i> Listeye dön</a>
 <h1>Yeni Başlık Ekle</h1>
 <div class="form-box">
     <form method="post" action="/Feature/Create">

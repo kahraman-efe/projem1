@@ -1,207 +1,126 @@
-﻿<!DOCTYPE html>
+﻿@using WebApplication4.DAL.Context
+@inject MyPortfolioContext Db
+@{
+    var controller = ViewContext.RouteData.Values["controller"]?.ToString() ?? "";
+    string Active(string c) => string.Equals(controller, c, StringComparison.OrdinalIgnoreCase) ? "active" : "";
+
+    // Okunmamış mesaj sayısı (veritabanına ulaşılamazsa menüde rozet gösterilmez)
+    int unread = 0;
+    try { unread = Db.Messages.Count(m => !m.IsRead); } catch { }
+
+    var userName = User.Identity?.Name ?? "Admin";
+    var initial = userName.Length > 0 ? userName.Substring(0, 1) : "A";
+    var pageTitle = ViewData["Title"]?.ToString() ?? "Panel";
+}
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewData["Title"] - Admin Panel</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f5f7;
-            display: flex;
-            min-height: 100vh;
-        }
-
-        .sidebar {
-            width: 240px;
-            background: #1e1e2d;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            padding: 1.5rem 0;
-        }
-
-            .sidebar h2 {
-                padding: 0 1.5rem 1.5rem;
-                font-size: 18px;
-                border-bottom: 1px solid #333;
-                margin-bottom: 1rem;
-            }
-
-            .sidebar a {
-                color: #ccc;
-                text-decoration: none;
-                padding: 12px 1.5rem;
-                font-size: 14px;
-                display: block;
-            }
-
-                .sidebar a:hover {
-                    background: #2a2a3d;
-                    color: #fff;
-                }
-
-                .sidebar a.active {
-                    background: #2a2a3d;
-                    color: #fff;
-                    border-left: 3px solid #d43b2f;
-                }
-
-            .sidebar .logout {
-                margin-top: auto;
-                border-top: 1px solid #333;
-                color: #e05c4c;
-            }
-
-        .main {
-            flex: 1;
-            padding: 2rem;
-        }
-
-        .btn {
-            background: #1e1e2d;
-            color: #fff;
-            padding: 10px 18px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 14px;
-            display: inline-block;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        th, td {
-            padding: 12px 16px;
-            text-align: left;
-            border-bottom: 1px solid #eee;
-            font-size: 14px;
-        }
-
-        th {
-            background: #1e1e2d;
-            color: #fff;
-        }
-
-        tr:hover {
-            background: #f9f9f9;
-        }
-
-        .validation-summary {
-            background: #fdecea;
-            border: 1px solid #d43b2f;
-            color: #d43b2f;
-            border-radius: 8px;
-            padding: 0.75rem 1rem;
-            margin-bottom: 1rem;
-        }
-
-            .validation-summary ul {
-                margin: 0;
-                padding-left: 1.25rem;
-            }
-
-        .delete-form {
-            display: inline;
-        }
-
-        .delete-link {
-            color: #d43b2f;
-            text-decoration: none;
-            background: none;
-            border: none;
-            padding: 0;
-            font: inherit;
-            cursor: pointer;
-        }
-
-            .delete-link:hover {
-                text-decoration: underline;
-            }
-
-        .top-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .form-box {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 10px;
-            max-width: 480px;
-        }
-
-        label {
-            display: block;
-            font-size: 13px;
-            color: #666;
-            margin-bottom: 6px;
-            margin-top: 14px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px 12px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            font-size: 14px;
-        }
-
-        button {
-            margin-top: 1.5rem;
-            background: #1e1e2d;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-
-        img.thumb {
-            width: 60px;
-            height: 40px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>@pageTitle · Admin Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
+    <link rel="icon" type="image/svg+xml" href="/hola-master/favicon.svg">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>Admin Panel</h2>
-        <a href="/Admin/Index">Dashboard</a>
-        <a href="/Feature/Index">Ana Sayfa Başlığı</a>
-        <a href="/Education/Index">Eğitim</a>
-        <a href="/Message/Index">Mesajlar</a>
-        <a href="/Portfolio/Index">Projeler</a>
-        <a href="/Skill/Index">Yetenekler</a>
-        <a href="/Experience/Index">Deneyimler</a>
-        <a href="/About/Index">Hakkımda</a>
-        <a href="/Testimonial/Index">Referanslar</a>
-        <a href="/Statistic/Index">İstatistikler</a>
-        <a href="/SocialMedia/Index">Sosyal Medya</a>
-        <a href="/Contact/Index">İletişim Bilgileri</a>
-        <a href="/Default/Index" target="_blank">Siteyi Gör</a>
-        <a href="/AdminLogin/Logout" class="logout">Çıkış Yap</a>
-        
+    <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
 
+    <div class="shell">
+        <aside class="sidebar" id="sidebar">
+            <a class="brand" href="/Admin/Index">
+                <span class="brand__logo">KE</span>
+                <span class="brand__text">
+                    <strong>Kahraman Efe</strong>
+                    <small>Yönetim Paneli</small>
+                </span>
+            </a>
+
+            <nav class="nav" aria-label="Admin menüsü">
+                <a href="/Admin/Index" class="@Active("Admin")"><i class="bi bi-grid-1x2-fill"></i> Dashboard</a>
+                <a href="/Message/Index" class="@Active("Message")">
+                    <i class="bi bi-envelope-paper-heart"></i> Mesajlar
+                    @if (unread > 0)
+                    {
+                        <span class="nav__badge">@unread</span>
+                    }
+                </a>
+
+                <div class="nav__group">İçerik</div>
+                <a href="/Feature/Index" class="@Active("Feature")"><i class="bi bi-stars"></i> Ana Sayfa Başlığı</a>
+                <a href="/About/Index" class="@Active("About")"><i class="bi bi-person-badge"></i> Hakkımda</a>
+                <a href="/Portfolio/Index" class="@Active("Portfolio")"><i class="bi bi-kanban"></i> Projeler</a>
+                <a href="/Skill/Index" class="@Active("Skill")"><i class="bi bi-lightning-charge"></i> Yetenekler</a>
+                <a href="/Education/Index" class="@Active("Education")"><i class="bi bi-mortarboard"></i> Eğitim</a>
+                <a href="/Experience/Index" class="@Active("Experience")"><i class="bi bi-briefcase"></i> Deneyimler</a>
+                <a href="/Testimonial/Index" class="@Active("Testimonial")"><i class="bi bi-chat-quote"></i> Referanslar</a>
+                <a href="/Statistic/Index" class="@Active("Statistic")"><i class="bi bi-bar-chart-line"></i> İstatistikler</a>
+
+                <div class="nav__group">Ayarlar</div>
+                <a href="/SocialMedia/Index" class="@Active("SocialMedia")"><i class="bi bi-share"></i> Sosyal Medya</a>
+                <a href="/Contact/Index" class="@Active("Contact")"><i class="bi bi-geo-alt"></i> İletişim Bilgileri</a>
+            </nav>
+
+            <div class="sidebar__footer">
+                <a href="/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Siteyi Gör</a>
+                <a href="/AdminLogin/Logout" class="logout"><i class="bi bi-power"></i> Çıkış Yap</a>
+            </div>
+        </aside>
+        <div class="backdrop" id="backdrop"></div>
+
+        <main class="main">
+            <header class="topbar">
+                <button type="button" class="topbar__menu" id="menuToggle" aria-label="Menüyü aç" aria-controls="sidebar"><i class="bi bi-list"></i></button>
+                <div class="topbar__crumb">Panel / <b>@pageTitle</b></div>
+                <div class="topbar__spacer"></div>
+                <div class="topbar__clock" id="clock"></div>
+                <div class="avatar" title="@userName">@initial</div>
+            </header>
+
+            @RenderBody()
+        </main>
     </div>
 
-    <div class="main">
-        @RenderBody()
-    </div>
+    <script>
+        (function () {
+            // Mobil menü
+            var body = document.body;
+            document.getElementById('menuToggle').addEventListener('click', function () { body.classList.toggle('nav-open'); });
+            document.getElementById('backdrop').addEventListener('click', function () { body.classList.remove('nav-open'); });
 
+            // Canlı saat
+            var clock = document.getElementById('clock');
+            function tick() {
+                clock.textContent = new Date().toLocaleString('tr-TR', { weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
+            }
+            tick(); setInterval(tick, 30000);
+
+            // Tabloları kart içine al, boş tablolara bilgi satırı ekle
+            document.querySelectorAll('.main table').forEach(function (table) {
+                if (!table.parentElement.classList.contains('table-card')) {
+                    var wrap = document.createElement('div');
+                    wrap.className = 'table-card';
+                    table.parentNode.insertBefore(wrap, table);
+                    wrap.appendChild(table);
+                }
+                var rows = table.querySelectorAll('tr');
+                if (rows.length === 1) {
+                    var cols = rows[0].children.length;
+                    var tr = document.createElement('tr');
+                    tr.innerHTML = '<td class="empty" colspan="' + cols + '"><i class="bi bi-inbox"></i>Henüz kayıt yok. Yeni bir tane ekleyerek başla!</td>';
+                    rows[0].parentNode.appendChild(tr);
+                }
+            });
+
+            // Sil butonlarına ikon
+            document.querySelectorAll('.delete-link').forEach(function (el) {
+                el.insertAdjacentHTML('afterbegin', '<i class="bi bi-trash3"></i>');
+            });
+        })();
+    </script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

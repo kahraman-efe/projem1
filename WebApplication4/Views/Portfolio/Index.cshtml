@@ -1,10 +1,11 @@
 ﻿@model List<WebApplication4.DAL.Entities.Portfolio>
 @{
     Layout = "_AdminLayout";
+    ViewData["Title"] = "Projeler";
 }
 <div class="top-bar">
     <h1>Projeler</h1>
-    <a href="/Portfolio/Create" class="btn">+ Yeni Proje Ekle</a>
+    <a href="/Portfolio/Create" class="btn"><i class="bi bi-plus-lg"></i> Yeni Proje Ekle</a>
 </div>
 <table>
     <tr>
@@ -18,10 +19,19 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td><img class="thumb" src="@item.ImageURL" /></td>
+            <td><img class="thumb" src="@item.ImageURL" alt="" onerror="this.style.visibility='hidden'" /></td>
             <td>@item.Title</td>
             <td>@item.Subtitle</td>
-            <td>@(item.Status == WebApplication4.DAL.Entities.ProjectStatus.Tamamlandi ? "Tamamlandı" : "Gelişmekte Olan")</td>
+            <td>
+                @if (item.Status == WebApplication4.DAL.Entities.ProjectStatus.Tamamlandi)
+                {
+                    <span class="pill pill--ok"><i class="bi bi-check2-circle"></i> Tamamlandı</span>
+                }
+                else
+                {
+                    <span class="pill pill--warn"><i class="bi bi-hourglass-split"></i> Geliştiriliyor</span>
+                }
+            </td>
             <td><a href="@item.URL" target="_blank">@item.URL</a></td>
             <td>
                 <form method="post" action="/Portfolio/Delete/@item.PortfolioId" onsubmit="return confirm('Silmek istediğine emin misin?')" class="delete-form">
