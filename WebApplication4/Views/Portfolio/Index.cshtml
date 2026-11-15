@@ -7,6 +7,10 @@
     <h1>Projeler</h1>
     <a href="/Portfolio/Create" class="btn"><i class="bi bi-plus-lg"></i> Yeni Proje Ekle</a>
 </div>
+@if (TempData["AdminSuccess"] is string ok)
+{
+    <div class="alert" style="border-color:rgba(52,211,153,.4);background:rgba(52,211,153,.1);color:#a7f3d0"><i class="bi bi-check2-circle"></i> @ok</div>
+}
 <table>
     <tr>
         <th>Görsel</th>
@@ -32,8 +36,18 @@
                     <span class="pill pill--warn"><i class="bi bi-hourglass-split"></i> Geliştiriliyor</span>
                 }
             </td>
-            <td><a href="@item.URL" target="_blank">@item.URL</a></td>
             <td>
+                @if (!string.IsNullOrWhiteSpace(item.URL))
+                {
+                    <a href="@item.URL" target="_blank" rel="noopener" title="@item.URL">@item.URL.Replace("https://", "").Replace("http://", "")</a>
+                }
+                else
+                {
+                    <span style="color:var(--text-faint)">—</span>
+                }
+            </td>
+            <td>
+                <a href="/Portfolio/Edit/@item.PortfolioId" class="btn btn--ghost btn--sm"><i class="bi bi-pencil"></i> Düzenle</a>
                 <form method="post" action="/Portfolio/Delete/@item.PortfolioId" onsubmit="return confirm('Silmek istediğine emin misin?')" class="delete-form">
                     @Html.AntiForgeryToken()
                     <button type="submit" class="delete-link">Sil</button>

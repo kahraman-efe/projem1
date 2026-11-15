@@ -24,8 +24,9 @@ namespace WebApplication4.DAL.Entities
         [ValidateNever]
         public string ImageURL { get; set; }
 
+        // Not: Burada [Url] yok; "siteadi.com" gibi https:// olmadan girilen adresler
+        // PortfolioController'da otomatik olarak https:// ile tamamlanıp doğrulanır.
         [StringLength(500)]
-        [Url(ErrorMessage = "Geçerli bir URL girin.")]
         public string URL { get; set; }
 
         [StringLength(2000)]

@@ -182,6 +182,11 @@
         $folioItems.each(function (i) {
 
             $(this).on('click', function (e) {
+                // Proje linki ikonuna basıldıysa galeriyi açma, linkin kendisine gitsin
+                if ($(e.target).closest('.item-folio__project-link').length) {
+                    return;
+                }
+
                 e.preventDefault();
                 var options = {
                     index: i,

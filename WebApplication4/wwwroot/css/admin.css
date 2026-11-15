@@ -700,3 +700,7 @@ td a[href^="http"] {
     word-break: normal;
     vertical-align: middle;
 }
+
+/* Tablo işlem sütunu: Düzenle + Sil yan yana */
+td:last-child { white-space: nowrap; }
+td:last-child .btn + .delete-form { margin-left: 6px; }

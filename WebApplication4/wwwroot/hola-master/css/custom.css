@@ -499,3 +499,28 @@ textarea:focus-visible {
 @media (prefers-reduced-motion: reduce) {
     .intern-badge__dot::after { animation: none; }
 }
+
+/* ---------- Proje linki ikonu ---------- */
+/* Sol üstteki durum etiketiyle çakışmasın diye sağ üste alındı */
+.item-folio__project-link {
+    left: auto;
+    right: 1.6rem;
+    top: 1.4rem;
+    background: rgba(13, 10, 11, .55);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transform: translate3d(50%, 0, 0);
+}
+.item-folio__project-link:hover,
+.item-folio__project-link:focus {
+    background: #3b9cff;
+    box-shadow: 0 0 0 1px #3b9cff;
+}
+/* Dokunmatik ekranlarda "üzerine gelme" yok: ikon hep görünsün */
+@media (hover: none) {
+    .item-folio__project-link {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+}

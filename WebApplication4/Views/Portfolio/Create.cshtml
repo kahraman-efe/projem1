@@ -1,12 +1,16 @@
 ﻿@model WebApplication4.DAL.Entities.Portfolio
+@using WebApplication4.DAL.Entities
 @{
     Layout = "_AdminLayout";
-    ViewData["Title"] = "Yeni Proje";
+    var isEdit = Model != null && Model.PortfolioId > 0;
+    ViewData["Title"] = isEdit ? "Projeyi Düzenle" : "Yeni Proje";
+    var action = isEdit ? $"/Portfolio/Edit/{Model!.PortfolioId}" : "/Portfolio/Create";
+    var hasImage = !string.IsNullOrWhiteSpace(Model?.ImageURL);
 }
 <a href="/Portfolio/Index" class="btn btn--ghost btn--sm" style="margin-bottom:16px"><i class="bi bi-arrow-left"></i> Listeye dön</a>
-<h1>Yeni Proje Ekle</h1>
+<h1>@(isEdit ? "Projeyi Düzenle" : "Yeni Proje Ekle")</h1>
 <div class="form-box">
-    <form method="post" action="/Portfolio/Create" enctype="multipart/form-data">
+    <form method="post" action="@action" enctype="multipart/form-data">
         @Html.AntiForgeryToken()
         @if (!ViewData.ModelState.IsValid)
         {
@@ -19,35 +23,36 @@
                 </ul>
             </div>
         }
-        <label>Başlık</label>
-        <input type="text" name="Title" required />
+        <label for="Title">Başlık</label>
+        <input type="text" id="Title" name="Title" value="@Model?.Title" maxlength="200" required />
 
-        <label>Alt Başlık</label>
-        <input type="text" name="Subtitle" />
+        <label for="Subtitle">Alt Başlık <small style="color:var(--text-faint)">(isteğe bağlı)</small></label>
+        <input type="text" id="Subtitle" name="Subtitle" value="@Model?.Subtitle" maxlength="200" placeholder="Ör: ASP.NET Core MVC" />
 
-        <label>Görsel</label>
+        <label>Görsel @if (isEdit) { <small style="color:var(--text-faint)">(değiştirmek istemiyorsan boş bırak)</small> }</label>
         <div id="dropZone" class="drop-zone">
-            <div id="dropZoneText">
+            <div id="dropZoneText" style="@(hasImage ? "display:none" : "")">
                 <p>📁 Görsel yüklemek için tıklayın veya sürükleyin</p>
                 <small>PNG, JPG, WEBP — maks. 5MB</small>
             </div>
-            <img id="previewImg" style="display:none; max-height:120px; margin-top:10px;" />
+            <img id="previewImg" src="@(hasImage ? Model!.ImageURL : "")" alt="" style="@(hasImage ? "" : "display:none;") max-height:140px; margin-top:10px;" />
         </div>
         <input type="file" name="ImageFile" id="fileInput" accept="image/*" style="display:none" />
 
-        <label>Proje Linki</label>
-        <input type="text" name="URL" />
+        <label for="URL">Proje Linki <small style="color:var(--text-faint)">(isteğe bağlı)</small></label>
+        <input type="text" id="URL" name="URL" value="@Model?.URL" maxlength="500" placeholder="siteadi.com, https://github.com/kullanici/proje, ..." inputmode="url" autocomplete="off" />
+        <small style="display:block;margin-top:6px;color:var(--text-faint)">Her türlü web adresi olur; başına https:// yazmazsan otomatik eklenir.</small>
 
-        <label>Durum</label>
-        <select name="Status">
-            <option value="Tamamlandi">Tamamlandı</option>
-            <option value="Gelisiyor">Gelişmekte Olan</option>
+        <label for="Status">Durum</label>
+        <select id="Status" name="Status">
+            <option value="Tamamlandi" selected="@(Model?.Status == ProjectStatus.Tamamlandi)">Tamamlandı</option>
+            <option value="Gelisiyor" selected="@(Model?.Status == ProjectStatus.Gelisiyor)">Geliştiriliyor</option>
         </select>
 
-        <label>Açıklama</label>
-        <textarea name="Description" rows="4"></textarea>
+        <label for="Description">Açıklama <small style="color:var(--text-faint)">(isteğe bağlı)</small></label>
+        <textarea id="Description" name="Description" rows="4" maxlength="2000">@Model?.Description</textarea>
 
-        <button type="submit">Kaydet</button>
+        <button type="submit"><i class="bi bi-check2"></i> @(isEdit ? "Değişiklikleri Kaydet" : "Kaydet")</button>
     </form>
 </div>
 
@@ -104,6 +109,7 @@
             okuyucu.onload = (e) => {
                 previewImg.src = e.target.result;
                 previewImg.style.display = 'block';
+                document.getElementById('dropZoneText').style.display = 'none';
             };
             okuyucu.readAsDataURL(dosya);
         }
