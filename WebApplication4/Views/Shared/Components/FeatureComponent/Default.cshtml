@@ -4,6 +4,9 @@
     var hero = Model?.FirstOrDefault();
     var title = string.IsNullOrWhiteSpace(hero?.Title) ? "Merhaba, ben Kahraman Efe" : hero!.Title;
     var description = string.IsNullOrWhiteSpace(hero?.Description) ? "Yazılım geliştiriciyim." : hero!.Description;
+
+    // Staj bulunca false yapman yeterli; rozet kaybolur.
+    var openToInternship = true;
 }
 <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="/hola-master/images/foto1.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
     <div class="overlay"></div>
@@ -11,6 +14,15 @@
 
     <div class="home-content">
         <div class="row home-content__main">
+            @if (openToInternship)
+            {
+                <a href="#contact" class="smoothscroll intern-badge" title="Staj fırsatları için iletişime geçin">
+                    <span class="intern-badge__dot" aria-hidden="true"></span>
+                    <span>Staja açığım</span>
+                    <span class="intern-badge__sep" aria-hidden="true">·</span>
+                    <span lang="en">Open to internships</span>
+                </a>
+            }
             <h3>@title</h3>
             <h1>@description</h1>
             <div class="home-content__buttons">
