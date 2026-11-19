@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApplication4.DAL.Context;
+using WebApplication4.Infrastructure;
 
 namespace WebApplication4.ViewComponents
 {
@@ -21,6 +22,14 @@ namespace WebApplication4.ViewComponents
 
         protected T Safe<T>(Func<MyPortfolioContext, T> query, T fallback)
         {
+            // Önce bellekteki kopyaya bak (bkz. HomeContentCache); varsa veritabanına hiç gitme.
+            var cache = HttpContext.RequestServices.GetRequiredService<HomeContentCache>();
+            var cacheKey = "home:" + GetType().Name;
+            if (cache.TryGet<T>(cacheKey, out var cached))
+            {
+                return cached;
+            }
+
             // Aynı istekte veritabanı bir kez hata verdiyse diğer bölümler tekrar
             // bağlanmaya çalışıp (zaman aşımı kadar) sayfayı yavaşlatmasın.
             if (HttpContext.Items.ContainsKey(DbDownKey))
@@ -30,7 +39,9 @@ namespace WebApplication4.ViewComponents
 
             try
             {
-                return query(Context);
+                var result = query(Context);
+                cache.Set(cacheKey, result); // yalnızca başarılı sonuçlar önbelleğe alınır
+                return result;
             }
             catch (Exception ex)
             {
